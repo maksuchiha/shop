@@ -259,16 +259,18 @@ ul {
 }
 
 .link {
-  color: #0C25F6;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19.6px;
+    color: #0C25F6;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.6px;
+    transition: .2s;
 }
 .link_small {
   font-size: 12px;
 }
 .link:hover {
-  color: #C5A7E5;
+    color: #C5A7E5;
+    transition: .2s;
 }
 
 .technical {
