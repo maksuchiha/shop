@@ -259,18 +259,18 @@ ul {
 }
 
 .link {
-    color: #0C25F6;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19.6px;
-    transition: .2s;
+  color: #0C25F6;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19.6px;
+  transition: 0.3s;
 }
 .link_small {
   font-size: 12px;
 }
 .link:hover {
-    color: #C5A7E5;
-    transition: .2s;
+  color: #C5A7E5;
+  transition: 0.3s;
 }
 
 .technical {
@@ -346,7 +346,7 @@ ul {
   font-size: 14px;
   font-family: Roboto, sans-serif;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .button_small {
   position: absolute;
@@ -365,7 +365,7 @@ ul {
 }
 .button:hover {
   background: #3E57EC;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .city-service {
@@ -411,6 +411,11 @@ ul {
 }
 .title_bold {
   font-weight: 500;
+}
+.title_mini {
+  color: #0C25F6;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .about {
@@ -483,7 +488,6 @@ ul {
   color: #0F0E16;
   font-size: 11px;
 }
-
 .last-review {
   padding: 76px 70px;
   background: #F9FBFD;
