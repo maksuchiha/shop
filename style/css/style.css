@@ -267,6 +267,9 @@ ul {
 .link_small {
   font-size: 12px;
 }
+.link:hover {
+  color: #C5A7E5;
+}
 
 .technical {
   padding: 33px 0 89px 0;
@@ -341,6 +344,7 @@ ul {
   font-size: 14px;
   font-family: Roboto, sans-serif;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .button_small {
   position: absolute;
@@ -356,6 +360,10 @@ ul {
 .button_middle {
   width: 122px;
   height: 29px;
+}
+.button:hover {
+  background: #3E57EC;
+  transition: all 0.2s;
 }
 
 .city-service {
@@ -509,7 +517,21 @@ ul {
   margin-left: 13px;
 }
 
-.star_mb {
+.stars .stars-star {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+.stars .stars-star_full {
+  background: url("../../img/icons/review/star.svg") center/cover no-repeat;
+}
+.stars .stars-star_half {
+  background: url("../../img/icons/review/half-star.png") center/cover no-repeat;
+}
+.stars .stars-star_empty {
+  background: url("../../img/icons/review/empty-star.png") center/cover no-repeat;
+}
+.stars_mb {
   margin-bottom: 10px;
 }
 
@@ -531,6 +553,52 @@ ul {
   font-size: 12px;
   color: #fff;
   font-weight: 300;
+}
+
+.nav-menu__click {
+  color: #0C25F6;
+  font-size: 13px;
+  font-family: Raleway, sans-serif;
+  cursor: pointer;
+  background: #F9FBFD;
+  height: 30px;
+  transition: all 0.2s;
+}
+.nav-menu__click:hover {
+  transition: all 0.2s;
+  color: #C5A7E5;
+  background: #F9FBFD;
+}
+.nav-menu__click img {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0C25F6;
+  object-fit: scale-down;
+  margin-left: 5px;
+}
+.nav-menu__click:checked {
+  border: 1px solid #3E57EC;
+}
+.nav-menu__list {
+  padding: 13px 15px 7px 24px;
+  background: #F9FBFD;
+  border: 1px solid #3E57EC;
+  display: none;
+}
+.nav-menu__list_active {
+  display: block;
+}
+.nav-menu__link {
+  color: #52515C;
+  font-size: 11px;
+  padding: 7px 0;
+  display: block;
+}
+.nav-menu__link:hover {
+  transition: all 0.2s;
+  color: #C5A7E5;
+  background: #F9FBFD;
 }
 
 /*# sourceMappingURL=style.css.map */
