@@ -468,6 +468,10 @@ ul {
 .review {
   padding: 89px 0 86px 0;
 }
+.review .review-item {
+  background: #F9FBFD;
+  padding: 13px;
+}
 .review .review-item__img {
   width: 82px;
   height: 82px;
@@ -591,6 +595,9 @@ ul {
   width: 100%;
   border-radius: 0;
 }
+.nav-menu__click:focus {
+  border: 1px solid #0C25F6;
+}
 .nav-menu__click:hover {
   transition: all 0.2s;
   color: #C5A7E5;
@@ -694,6 +701,11 @@ ul {
 .category__info {
   color: #52515C;
   font-size: 12px;
+  margin-top: 24px;
+}
+.category__info a {
+  color: #52515C;
+  font-size: 12px;
 }
 .category__info span {
   margin: 0 10px;
@@ -715,6 +727,7 @@ ul {
   margin-right: 16px;
 }
 .category__link {
+  padding: 0;
   font-size: 14px;
   color: #0C25F6;
 }
