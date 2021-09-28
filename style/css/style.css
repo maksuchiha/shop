@@ -1,5 +1,4 @@
 @import "./../libs/bootstrap.min.css";
-
 @font-face {
   font-family: "Raleway";
   src: local("Raleway Thin"), local("Raleway-Thin"), url("../../fonts/raleway/ralewaythin.woff2") format("woff2"), url("../../fonts/raleway/ralewaythin.woff") format("woff"), url("../../fonts/raleway/ralewaythin.ttf") format("truetype");
@@ -567,6 +566,62 @@ ul {
   margin-right: 18px;
 }
 
+.rating-area {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  padding: 0;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-area:not(:checked) > label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/icons/about-company/star_black.webp") center/cover no-repeat;
+}
+
+.rating-area > input:checked ~ label {
+  width: 20px;
+  height: 20px;
+  background: url("../../img/icons/review/star.svg") center/cover no-repeat;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  width: 20px;
+  height: 20px;
+  background: url("../../img/icons/review/star.svg") center/cover no-repeat;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  width: 20px;
+  height: 20px;
+  background: url("../../img/icons/review/star.svg") center/cover no-repeat;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
 .grade {
   font-size: 18px;
   color: #C5A7E5;
@@ -1092,12 +1147,40 @@ ul {
   border: 2px solid #0C25F6;
 }
 .about-company .about-company-accordion__button {
-  padding: 20px 0 20px 21px;
+  position: relative;
+  padding: 20px 0 20px 79px;
   color: #3E57EC;
   background: #F9FBFD;
   font-size: 18px;
   font-family: Raleway, sans-serif;
   border-radius: 3px;
+}
+.about-company .about-company-accordion .accordion-button.collapsed:before {
+  position: absolute;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 33px;
+  height: 1px;
+  background: #0C25F6;
+}
+.about-company .about-company-accordion .accordion-button.collapsed:after {
+  left: 36px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 33px;
+  background: #0C25F6;
+}
+.about-company .about-company-accordion .accordion-button:before {
+  position: absolute;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 33px;
+  height: 1px;
+  background: #0C25F6;
 }
 .about-company .about-company-accordion ul li {
   font-size: 14px;
