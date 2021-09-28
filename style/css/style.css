@@ -214,7 +214,7 @@ ul {
   margin-right: 14px;
 }
 .link:hover {
-  color: #C5A7E5;
+  color: #c5a7e5;
   transition: 0.3s;
 }
 
@@ -579,7 +579,7 @@ ul {
 
 .rating-area:not(:checked) > label {
   padding: 0;
-  margin-right: 5px;
+  margin-right: 1px;
   cursor: pointer;
   font-size: 32px;
   line-height: 32px;
@@ -624,7 +624,7 @@ ul {
 
 .grade {
   font-size: 18px;
-  color: #C5A7E5;
+  color: #c5a7e5;
 }
 .grade_mr {
   margin-right: 13px;
@@ -641,7 +641,13 @@ ul {
 .footer__link {
   font-size: 12px;
   color: #fff;
+  opacity: 0.7;
   font-weight: 300;
+  transition: 0.3s;
+}
+.footer__link:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .nav-menu__container {
@@ -649,6 +655,9 @@ ul {
   padding: 0 10px;
 }
 .nav-menu__click {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #0C25F6;
   font-size: 12px;
   font-family: Raleway, sans-serif;
@@ -661,12 +670,22 @@ ul {
   width: 100%;
   border-radius: 0;
 }
+.nav-menu__click:after {
+  content: "";
+  margin-left: 12px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  background: #0C25F6 url("../../img/icons/nav-menu/arrow.svg") center no-repeat;
+}
 .nav-menu__click:focus {
   border: 1px solid #0C25F6;
 }
 .nav-menu__click:hover {
   transition: all 0.2s;
-  color: #C5A7E5;
+  color: #c5a7e5;
   background: #F9FBFD;
 }
 .nav-menu__click img {
@@ -682,7 +701,7 @@ ul {
 }
 .nav-menu__list {
   width: 100%;
-  padding: 5px 15px 7px 24px;
+  padding: 5px 15px 7px 16px;
   background: #F9FBFD;
   border: 1px solid #3E57EC;
 }
@@ -695,8 +714,13 @@ ul {
 }
 .nav-menu__link:hover {
   transition: all 0.2s;
-  color: #C5A7E5;
+  color: #c5a7e5;
   background: #F9FBFD;
+}
+
+.show > .nav-menu__click:after {
+  background: #E855D4;
+  transform: rotate(0);
 }
 
 .technical-xl {
@@ -886,7 +910,7 @@ ul {
 .company__wrapper {
   padding: 22px 25px 33px 15px;
   background: #F9FBFD;
-  border-top: 5px solid #C5A7E5;
+  border-top: 5px solid #c5a7e5;
   border-radius: 3px;
 }
 .company__wrapper_bg-w {
@@ -919,7 +943,12 @@ ul {
   color: #fff;
   padding: 6px 11px;
   font-size: 12px;
-  background: #C5A7E5;
+  background: #c5a7e5;
+  transition: 0.3s;
+}
+.company__link:hover {
+  background: #9778b2;
+  transition: 0.3s;
 }
 .company__places {
   margin-top: 25px;
@@ -1022,6 +1051,12 @@ ul {
   background: #F9FBFD;
   color: #C4C1C8;
   font-size: 12px;
+  transition: 0.3s;
+}
+.company__page-link:hover {
+  background: #3E57EC;
+  transition: 0.3s;
+  color: #fff;
 }
 .company__page-link_active {
   background: #3E57EC;
@@ -1084,10 +1119,11 @@ ul {
   font-size: 12px;
   background: #F9FBFD;
   transition: all 0.3s;
+  border-radius: 3px;
 }
 .about-company__link:hover {
   transition: all 0.3s;
-  color: #C5A7E5;
+  color: #c5a7e5;
 }
 .about-company__master-wr {
   background: #F9FBFD;
@@ -1155,23 +1191,9 @@ ul {
   font-family: Raleway, sans-serif;
   border-radius: 3px;
 }
-.about-company .about-company-accordion .accordion-button.collapsed:before {
-  position: absolute;
-  left: 20px;
-  content: "";
-  display: block;
-  width: 33px;
-  height: 1px;
-  background: #0C25F6;
-}
 .about-company .about-company-accordion .accordion-button.collapsed:after {
-  left: 36px;
-  position: absolute;
-  content: "";
-  display: block;
-  width: 1px;
-  height: 33px;
-  background: #0C25F6;
+  transform: rotate(0deg);
+  transition: 0.3s;
 }
 .about-company .about-company-accordion .accordion-button:before {
   position: absolute;
@@ -1181,6 +1203,17 @@ ul {
   width: 33px;
   height: 1px;
   background: #0C25F6;
+}
+.about-company .about-company-accordion .accordion-button:after {
+  left: 36px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 33px;
+  background: #0C25F6;
+  transform: rotate(-90deg);
+  transition: 0.3s;
 }
 .about-company .about-company-accordion ul li {
   font-size: 14px;
@@ -1204,7 +1237,7 @@ ul {
   margin-left: 15px;
 }
 .about-company .about-company-review {
-  border-top: 3px solid #C5A7E5;
+  border-top: 3px solid #c5a7e5;
   padding: 15px 35px 0 15px;
 }
 .about-company .about-company-review_mt {
@@ -1399,7 +1432,6 @@ ul {
   margin-top: 390px;
   width: 100%;
   height: 324px;
-  background: url("../../img/icons/reg/map.webp") center/cover no-repeat;
 }
 
 .service-center {
@@ -1422,7 +1454,7 @@ ul {
   width: 32px;
   height: 32px;
   display: flex;
-  border: 1px solid #C5A7E5;
+  border: 1px solid #c5a7e5;
   background: #F9FBFD;
   justify-content: center;
   align-items: center;
@@ -1447,7 +1479,7 @@ ul {
 
 .modal-brands__header {
   position: relative;
-  border-bottom: 1px solid #C5A7E5;
+  border-bottom: 1px solid #c5a7e5;
   padding: 10px 30px 10px 30px;
 }
 .modal-brands__title {
