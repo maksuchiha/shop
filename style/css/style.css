@@ -177,6 +177,11 @@ ul {
   background: #F9FBFD;
   color: #52515C;
   font-size: 12px;
+  border-radius: 20px;
+}
+.search .search-form input::placeholder {
+  color: #52515C;
+  font-size: 12px;
 }
 .search .search-form label {
   font-size: 12px;
@@ -195,6 +200,9 @@ ul {
 }
 .link_little {
   font-size: 10px;
+}
+.link_mini {
+  font-size: 13px;
 }
 .link_large {
   font-size: 24px;
@@ -360,7 +368,7 @@ ul {
   font-weight: 400;
 }
 .title__firm {
-  color: #EFF0F0;
+  color: #c4c4c4;
 }
 .title_large {
   font-size: 36px;
@@ -404,7 +412,7 @@ ul {
   background: url("../../img/bg/about/about.webp") center/cover no-repeat;
 }
 .about__text {
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
   font-weight: 300;
   margin-top: 13px;
@@ -426,12 +434,13 @@ ul {
   margin-right: 9px;
 }
 .about__li {
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
   font-weight: 300;
   margin: 5px 0;
 }
 .about__li_m {
+  display: block;
   margin-top: 13px;
   margin-bottom: 13px;
 }
@@ -510,6 +519,8 @@ ul {
   color: #0F0E16;
   font-size: 12px;
   margin-bottom: 4px;
+  display: block;
+  font-weight: 500;
 }
 .last-review .last-review-item__date {
   color: #52515C;
@@ -722,6 +733,7 @@ ul {
   font-size: 24px;
   font-family: Raleway, sans-serif;
   font-weight: 300;
+  border-radius: 3px;
 }
 .category .category-types__link:not(:last-of-type) {
   margin-right: 16px;
@@ -805,12 +817,12 @@ ul {
   padding: 11px 35px 12px 6px;
 }
 .form-repair input::placeholder {
-  color: #EFF0F0;
+  color: #52515C;
   font-size: 12px;
 }
 .form-repair__rate input {
   width: 42px;
-  padding: 17px 18px 6px 17px;
+  padding: 15px 18px 19px 17px;
 }
 
 .company {
@@ -957,7 +969,7 @@ ul {
   font-size: 12px;
 }
 .company__page-link_active {
-  background: #6495F1;
+  background: #3E57EC;
   color: #fff;
 }
 .company__page-link:not(:last-of-type) {
@@ -1064,7 +1076,8 @@ ul {
   font-size: 12px;
   color: #0F0E16;
 }
-.about-company__time h3 {
+.about-company__operating {
+  display: block;
   font-size: 12px;
   font-weight: 500;
   margin-right: 10px;
@@ -1289,6 +1302,10 @@ ul {
 .register-service__a-wr input {
   padding-right: 150px;
 }
+.register-service__a-wr input::placeholder {
+  color: #52515C;
+  font-size: 12px;
+}
 .register-service__reg {
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -1345,75 +1362,15 @@ ul {
   color: #52515C;
 }
 
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  z-index: 111;
-  width: 100%;
-  height: 100%;
-  background: rgba(82, 81, 92, 0.7);
-  overflow: auto;
-}
-.overlay_active {
-  display: block;
-}
-
-.modal-brands {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  z-index: 2;
-  transform: translateX(-50%);
-  background: #F2F2F2;
-  max-width: 600px;
-  min-height: 1091px;
-  width: 100%;
-  padding: 15px 0 30px 0;
-  overflow: auto;
-}
-.modal-brands_active {
-  display: block;
-}
 .modal-brands__header {
   position: relative;
   border-bottom: 1px solid #C5A7E5;
-  padding: 0 30px 10px 30px;
+  padding: 10px 30px 10px 30px;
 }
 .modal-brands__title {
   font-size: 24px;
   color: #3E57EC;
   font-weight: 300;
-  padding-bottom: 10px;
-}
-.modal-brands__closes {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-}
-.modal-brands__closes span:nth-child(1) {
-  transform: rotate(-45deg);
-  margin-bottom: -2px;
-}
-.modal-brands__closes span:nth-child(2) {
-  transform: rotate(45deg);
-  margin-bottom: -2px;
-}
-.modal-brands__close {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  display: block;
-  width: 30px;
-  height: 2px;
-  background: #C5A7E5;
-}
-.modal-brands__close:not(:last-of-type) {
-  margin-bottom: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
