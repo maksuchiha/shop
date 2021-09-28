@@ -654,21 +654,11 @@ ul {
   max-width: 1200px;
   padding: 0 10px;
 }
-.nav-menu__square {
-  width: 12px;
-  height: 12px;
-  border: 1px solid #0C25F6;
-  position: absolute;
-  top: 24px;
-  right: 36px;
-  transform: rotate(45deg);
-  background: #F9FBFD;
-}
 .nav-menu__click {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 37px 0 32px;
   color: #0C25F6;
   font-size: 12px;
   font-family: Raleway, sans-serif;
@@ -688,7 +678,6 @@ ul {
 }
 .nav-menu__click:after {
   content: "";
-  margin-left: 12px;
   display: block;
   width: 12px;
   height: 12px;
@@ -696,6 +685,9 @@ ul {
   transform: rotate(180deg);
   transition: 0.3s;
   background: #0C25F6 url("../../img/icons/nav-menu/arrow.svg") center no-repeat;
+}
+.nav-menu__click_af-n:after {
+  display: none;
 }
 .nav-menu__click:focus {
   border: 1px solid #0C25F6;
@@ -717,6 +709,7 @@ ul {
   border: 1px solid #3E57EC;
 }
 .nav-menu__list {
+  position: relative;
   width: 100%;
   padding: 5px 15px 7px 16px;
   background: #F9FBFD;
@@ -726,6 +719,19 @@ ul {
   border-top: none;
   box-shadow: none;
   top: -2px !important;
+}
+.nav-menu__list:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-left: 1px solid #0C25F6;
+  border-top: 1px solid #0C25F6;
+  position: absolute;
+  top: -7px;
+  right: 37px;
+  transform: rotate(45deg);
+  background: #F9FBFD;
 }
 .nav-menu__link {
   font-family: Raleway, sans-serif;
