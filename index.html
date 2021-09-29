@@ -16,10 +16,10 @@
                     <img src="img/logo/logo.svg" alt="logo" class="logo__img">
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <a href="#" class="header__link d-flex align-items-center"><img src="img/icons/header/geo.svg" alt="geo">Санкт-Петербург</a>
             </div>
-            <div class="col-7 d-flex justify-content-end">
+            <div class="col-6 d-flex justify-content-end">
                 <nav class="header__nav">
                     <ul class="header__ul d-flex">
                         <li><a href="pages/brands.html" class="header__link">Производители</a></li>
@@ -295,7 +295,7 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="about__wrap col-6">
+                <div class="about__wrap col-md-8">
                     <h2 class="title title_white title_left">О проекте</h2>
                     <p class="about__text about__text_mt">Нужно быстро починить технику? Мы собрали всю необходимую информацию о сервисных центрах и ремонтных мастерских в одном месте. Собрали организации в Санкт-Петербурге на основе рейтинга и отзывов посетителей. Ниш сайт предоставляет самую необходимую информацию: контакты, адреса, цены на самые востребованные работы.</p>
                     <h2 class="title title_white title_left">Поиск сервисного центра по станции метро и не только</h2>
@@ -405,7 +405,7 @@
             <h2 class="title title_white">Больше всего сервисных центров</h2>
             <div class="places__wrapper">
                 <div class="row justify-content-between">
-                    <div class="col-5">
+                    <div class="col-xl-5 col-lg-6 col-md-6">
                         <div class="places__stations">
                             <span class="title title_white title_bold title_left">На станциях</span>
                             <ul class="places__list mt-4 d-flex flex-wrap">
@@ -425,7 +425,7 @@
                             <a href="#" class="button button_middle">Все станции</a>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-xl-5 col-lg-6 col-md-6">
                         <div class="places__stations">
                             <span class="title title_white title_bold title_left">В районах</span>
                             <ul class="places__list mt-4 d-flex flex-wrap">
@@ -454,44 +454,25 @@
             <h2 class="title">Лучшие сервисы по отзывам клиентов</h2>
             <div class="review__wrapper mt-5">
                 <div class="row">
-                    <div class="col-3">
-                        <div class="review-item">
-                            <div class="review-item__top d-flex align-items-center">
-                                <img class="review-item__img" src="img/icons/review/img_1.webp" alt="img_review">
-                                <div class="review-item__name flex-column">
-                                    <a href="pages/about-company.html" class="link mb-2">ТЕХНОПРОФИКС</a>
-                                    <div class="grade mb-2">4.5</div>
-                                    <div class="stars stars_mb">
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_half"></span>
-                                        <span class="stars-star stars-star_empty"></span>
-                                    </div>
-                                    <span class="review-item__number">4 отзыва</span>
-                                </div>
-                            </div>
-                            <div class="review-item__bottom">
-                                м. Проспект Большевиков, пр. Пятилеток 14 к 1<br>
-                                м. Международная, ул. Белы Куна, д. 20
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
                         <div class="review-item">
                             <div class="review-item__top d-flex align-items-center">
                                 <img class="review-item__img" src="img/icons/review/img_2.webp" alt="img_review">
-                                <div class="review-item__name flex-column">
-                                    <a href="#" class="link mb-2">Мастер</a>
-                                    <div class="grade mb-2">4.5</div>
-                                    <div class="stars stars_mb">
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_half"></span>
-                                        <span class="stars-star stars-star_empty"></span>
+                                <div class="review-item__name w-100">
+                                    <div class="d-flex justify-content-md-between flex-xl-column">
+                                        <a href="#" class="link mb-2">Мастер</a>
+                                        <div class="grade mb-2">4.5</div>
                                     </div>
-                                    <span class="review-item__number">4 отзыва</span>
+                                    <div class="d-flex justify-content-md-between align-md-baseline flex-md-row-reverse flex-xl-column">
+                                        <div class="stars stars_mb">
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_half"></span>
+                                            <span class="stars-star stars-star_empty"></span>
+                                        </div>
+                                        <span class="review-item__number">4 отзыва</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="review-item__bottom">
@@ -500,52 +481,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="review-item">
-                            <div class="review-item__top d-flex align-items-center">
-                                <img class="review-item__img" src="img/icons/review/img_2.webp" alt="img_review">
-                                <div class="review-item__name flex-column">
-                                    <a href="pages/about-company.html" class="link mb-2">ТЕХНОПРОФИКС</a>
-                                    <div class="grade mb-2">4.5</div>
-                                    <div class="stars stars_mb">
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_half"></span>
-                                        <span class="stars-star stars-star_empty"></span>
-                                    </div>
-                                    <span class="review-item__number">4 отзыва</span>
-                                </div>
-                            </div>
-                            <div class="review-item__bottom">
-                                м. Проспект Большевиков, пр. Пятилеток 14 к 1<br>
-                                м. Международная, ул. Белы Куна, д. 20
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="review-item">
-                            <div class="review-item__top d-flex align-items-center">
-                                <img class="review-item__img" src="img/icons/review/img_1.webp" alt="img_review">
-                                <div class="review-item__name flex-column">
-                                    <a href="pages/about-company.html" class="link mb-2">ТЕХНОПРОФИКС</a>
-                                    <div class="grade mb-2">4.5</div>
-                                    <div class="stars stars_mb">
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_full"></span>
-                                        <span class="stars-star stars-star_half"></span>
-                                        <span class="stars-star stars-star_empty"></span>
-                                    </div>
-                                    <span class="review-item__number">4 отзыва</span>
-                                </div>
-                            </div>
-                            <div class="review-item__bottom">
-                                м. Проспект Большевиков, пр. Пятилеток 14 к 1<br>
-                                м. Международная, ул. Белы Куна, д. 20
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -574,7 +510,7 @@
                                 </div>
                             </div>
                             <a href="pages/about-company.html" class="link mb-2">ТЕХПРОФИКС</a>
-                            <p class="last-review-item__text">Починили чайник, но по срокам обещаным не уложились, еще и чайник вернули с каким-то пятном. Думал, что предложат скидку, но мне еще и нагрубили сверху, в общем сервис ...</p>
+                            <p class="last-review-item__text">Починили чайник, но по срокам обещаным не уложились, еще и чайник вернули с каким-то пятном. Думал, что предложат скидку, но мне еще и нагрубили сверху ...</p>
                             <a href="#" class="link">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
@@ -620,7 +556,7 @@
                                 </div>
                             </div>
                             <a href="pages/about-company.html" class="link mb-2">ТЕХПРОФИКС</a>
-                            <p class="last-review-item__text">Починили чайник, но по срокам обещанным не уложились, еще и чайник вернули с каким-то пятном. Думал, что предложат скидку, но мне еще и нагрубили сверху, в общем сервис ...</p>
+                            <p class="last-review-item__text">Починили чайник, но по срокам обещанным не уложились, еще и чайник вернули с каким-то пятном. Думал, что предложат скидку, но мне еще и нагрубили сверху ...</p>
                             <a href="#" class="link">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
