@@ -257,6 +257,9 @@ ul {
   .link_mr:not(:last-of-type) {
     margin-right: 4px;
   }
+  .link:hover {
+    color: #3E57EC;
+  }
 }
 .technical {
   padding: 33px 0 89px 0;
@@ -363,6 +366,11 @@ ul {
   transition: all 0.3s;
 }
 
+@media (max-width: 991.8px) {
+  .button:hover {
+    background: #0C25F6;
+  }
+}
 @media (max-width: 767.8px) {
   .button_form {
     width: 180px;
@@ -510,7 +518,7 @@ ul {
   content: "";
   display: flex;
   flex: 0 0 15px;
-  background: url("../../img/icons/company/apply.svg") center/cover no-repeat;
+  background: url("../../img/icons/about-company/apply.svg") center/cover no-repeat;
   width: 15px;
   height: 15px;
   margin-right: 9px;
@@ -836,6 +844,11 @@ ul {
     font-size: 10px;
   }
 }
+@media (max-width: 991.8px) {
+  .footer__link {
+    opacity: 1;
+  }
+}
 @media (max-width: 510px) {
   .footer__wrapper {
     flex-wrap: wrap;
@@ -946,7 +959,6 @@ ul {
   z-index: 2;
 }
 .nav-menu__link {
-  font-family: Raleway, sans-serif;
   color: #52515C;
   font-size: 11px;
   padding: 7px 0;
@@ -978,6 +990,10 @@ ul {
   .nav-menu__link {
     padding: 6px 0;
     font-size: 10px;
+  }
+  .nav-menu__link:hover {
+    color: #52515C;
+    background: transparent;
   }
 }
 @media (max-width: 767.8px) {
@@ -1381,6 +1397,16 @@ ul {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 991.8px) {
+  .company__link:hover {
+    background: #c5a7e5;
+  }
+  .company__page-link:hover {
+    background: #F9FBFD;
+    transition: 0.3s;
+    color: #fff;
+  }
+}
 @media (max-width: 767.8px) {
   .company__master-list {
     display: flex;
@@ -1442,7 +1468,7 @@ ul {
   max-width: 436px;
   width: 100%;
 }
-.about-company img[alt=technoprofix-xl] {
+.about-company__img {
   width: 150px;
 }
 .about-company__title {
@@ -1463,7 +1489,6 @@ ul {
   padding-right: 15px;
 }
 .about-company__link {
-  font-family: Raleway, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1738,6 +1763,9 @@ ul {
   }
   .about-company .about-company-feedback__form input {
     max-width: 150px;
+  }
+  .about-company__link:hover {
+    color: #3E57EC;
   }
 }
 @media (max-width: 575.8px) {
