@@ -10,20 +10,20 @@
 <body>
 <header class="header pt-3 pb-3">
     <div class="container">
-        <div class="header__wrapper row align-items-center">
-            <div class="col-3">
+        <div class="header__wrapper row align-items-center justify-content-between">
+            <div class="col-6 col-sm-3 d-flex">
                 <a href="#" class="logo">
                     <img src="../img/logo/logo.svg" alt="logo" class="logo__img">
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-3 d-flex justify-content-end justify-content-sm-start">
                 <a href="#" class="header__link d-flex align-items-center"><img src="../img/icons/header/geo.svg" alt="geo">Санкт-Петербург</a>
             </div>
-            <div class="col-7 d-flex justify-content-end">
-                <nav class="header__nav">
-                    <ul class="header__ul d-flex">
-                        <li><a href="#" class="header__link">Производители</a></li>
-                        <li><a href="#" class="header__link">Виды техники</a></li>
+            <div class="col-12 col-sm-6 d-flex justify-content-sm-end">
+                <nav class="header__nav mt-3 mt-sm-0">
+                    <ul class="header__list d-flex justify-content-between justify-content-sm-start">
+                        <li><a href="../pages/brands.html" class="header__link">Производители</a></li>
+                        <li><a href="../pages/types.html" class="header__link">Виды техники</a></li>
                         <li><a href="#" class="header__link">Вход для компаний</a><img src="../img/icons/header/sign.svg" alt="sign"></li>
                     </ul>
                 </nav>
@@ -110,7 +110,9 @@
                     </div>
                 </div>
                 <div class="col-2 p-0">
-                    <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,14 +134,14 @@
     </section>
     <section class="technical-xl technical-xl_pd">
         <div class="container">
-            <div class="technical-xl__wrapper technical-xl__wrapper_pd-wash">
+            <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/wash_machine-xl.webp" alt="wash_machine">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Крупная бытовая техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт стиральных машин</a></li>
@@ -163,12 +165,12 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/v-cleaner-xl.webp" alt="v-cleaner">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Крупная бытовая техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт стиральных машин</a></li>
@@ -192,12 +194,12 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/headphones-xl.webp" alt="headphones">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Крупная бытовая техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт телефонов</a></li>
@@ -222,12 +224,12 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/notebook-xl.webp" alt="notebook">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Компьютерная техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт ноутбуков</a></li>
@@ -244,12 +246,12 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/kettle-xl.webp" alt="kettle">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Мелкая кухонная техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт кофемашин</a></li>
@@ -282,12 +284,12 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/cond-xl.webp" alt="cond">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Климатическая техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт кондиционеров</a></li>
@@ -308,12 +310,12 @@
         <div class="container">
             <div class="technical-xl__wrapper technical-xl__wrapper_pd-watch">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/watch-xl.webp" alt="watch">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Часы</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт наручных часов</a></li>
@@ -328,12 +330,12 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/dyer-xl.webp" alt="dyer">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
                         <h2 class="title title_left">Техника для красоты</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт машинок для стрижки волос</a></li>
@@ -357,13 +359,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/recorder-xl.webp" alt="recorder">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Аудио и видеотехника</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Аудио и видеотехника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт телевизоров</a></li>
                             <li><a href="#" class="link">Ремонт камер видеонаблюдения</a></li>
@@ -391,13 +393,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/auto-key-xl.webp" alt="auto-key">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Автотехника</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Автотехника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт автомагнитол</a></li>
                             <li><a href="#" class="link">Ремонт радиостанций</a></li>
@@ -416,13 +418,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/sw_machine-xl.webp" alt="sw-machine">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Швейное оборудование</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Швейное оборудование</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт швейных машин</a></li>
                             <li><a href="#" class="link">Ремонт вышивальных машин</a></li>
@@ -438,13 +440,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/printer-xl.webp" alt="printer">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Офисная и оргтехника</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Офисная и оргтехника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт раций</a></li>
                             <li><a href="#" class="link">Ремонт радиотелефонов DECT</a></li>
@@ -466,13 +468,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/garden-xl.webp" alt="garden">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Садовая техника</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Садовая техника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт газонокосилок</a></li>
                             <li><a href="#" class="link">Ремонт моек высокого давления</a></li>
@@ -490,13 +492,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/heating-xl.webp" alt="heating">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Отопление и вентиляция</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Отопление и вентиляция</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт котлов отопления</a></li>
                             <li><a href="#" class="link">Ремонт газовых колонок</a></li>
@@ -513,13 +515,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/tool-xl.webp" alt="tool">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Электроинструменты</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Электроинструменты</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт воздушных компрессоров</a></li>
                             <li><a href="#" class="link">Ремонт шуруповёртов</a></li>
@@ -548,13 +550,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/generator-xl.webp" alt="generator">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Электрика</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Электрика</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт сварочных аппаратов</a></li>
                             <li><a href="#" class="link">Ремонт стабилизаторов напряжения</a></li>
@@ -570,13 +572,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/hard-disk-xl.webp" alt="hard-disk">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Компьютерные комплектующие</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Компьютерные комплектующие</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт ИБП</a></li>
                             <li><a href="#" class="link">Ремонт блоков питания</a></li>
@@ -596,13 +598,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/photo-xl.webp" alt="photo">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Фото и видеотехника</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Фото и видеотехника</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт фотоаппаратов</a></li>
                             <li><a href="#" class="link">Ремонт видеокамер</a></li>
@@ -620,13 +622,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/keyboard-xl.webp" alt="keyboard">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Компьютерная периферия</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Компьютерная периферия</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт мониторов</a></li>
                             <li><a href="#" class="link">Ремонт веб-камер</a></li>
@@ -643,13 +645,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/router-xl.webp" alt="router">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Сетевое оборудование</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Сетевое оборудование</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт роутеров</a></li>
                             <li><a href="#" class="link">Ремонт трансиверов</a></li>
@@ -663,13 +665,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/microscope-xl.webp" alt="microscope">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Оптические приборы</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Оптические приборы</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт биноклей</a></li>
                             <li><a href="#" class="link">Ремонт микроскопов</a></li>
@@ -685,13 +687,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/mixer-xl.webp" alt="mixer">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Музыкальные инструменты</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Музыкальные инструменты</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт синтезаторов и миди-клавиатур</a></li>
                             <li><a href="#" class="link">Ремонт микшерных пультов</a></li>
@@ -706,13 +708,13 @@
         <div class="container">
             <div class="technical-xl__wrapper">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-12 col-sm-6">
                         <div class="d-flex justify-content-center">
                             <img src="../img/icons/technical/copter-xl.webp" alt="copter">
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h2 class="title title_left">Электротранспорт</h2>
+                    <div class="col-12 col-sm-6 mt-3 mt-sm-0 d-flex flex-column align-items-center d-sm-block">
+                        <h2 class="title title_left fs-2">Электротранспорт</h2>
                         <ul class="technical-xl__list">
                             <li><a href="#" class="link">Ремонт гироскутеров</a></li>
                             <li><a href="#" class="link">Ремонт квадрокоптеров</a></li>
@@ -727,24 +729,24 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <div class="row">
-                <div class="col-3">
-                    <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
-                </div>
-                <div class="col-9">
-                    <ul class="footer__list d-flex flex-wrap justify-content-between">
-                        <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
-                        <li><a href="#" class="footer__link">Цифровая техника</a></li>
-                        <li><a href="#" class="footer__link">Apple</a></li>
-                        <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
-                        <li><a href="#" class="footer__link">Бытовая техника</a></li>
-                        <li><a href="#" class="footer__link">Электроинструмент</a></li>
-                        <li><a href="#" class="footer__link">Добавить организацию</a></li>
-                        <li><a href="#" class="footer__link">Кухонная техника</a></li>
-                        <li><a href="#" class="footer__link">Полный каталог</a></li>
-                    </ul>
-                </div>
+            <div class="footer__list">
+                <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
             </div>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
+                <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
+                <li><a href="#" class="footer__link">Добавить организацию</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Цифровая техника</a></li>
+                <li><a href="#" class="footer__link">Бытовая техника</a></li>
+                <li><a href="#" class="footer__link">Кухонная техника</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Apple</a></li>
+                <li><a href="#" class="footer__link">Электроинструмент</a></li>
+                <li><a href="#" class="footer__link">Полный каталог</a></li>
+            </ul>
         </div>
     </div>
 </footer>

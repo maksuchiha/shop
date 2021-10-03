@@ -10,20 +10,20 @@
 <body>
 <header class="header pt-3 pb-3">
     <div class="container">
-        <div class="header__wrapper row align-items-center">
-            <div class="col-3">
+        <div class="header__wrapper row align-items-center justify-content-between">
+            <div class="col-6 col-md-3 d-flex">
                 <a href="#" class="logo">
                     <img src="../img/logo/logo.svg" alt="logo" class="logo__img">
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-3 d-flex justify-content-end justify-content-md-start">
                 <a href="#" class="header__link d-flex align-items-center"><img src="../img/icons/header/geo.svg" alt="geo">Санкт-Петербург</a>
             </div>
-            <div class="col-7 d-flex justify-content-end">
-                <nav class="header__nav">
-                    <ul class="header__ul d-flex">
-                        <li><a href="#" class="header__link">Производители</a></li>
-                        <li><a href="#" class="header__link">Виды техники</a></li>
+            <div class="col-12 col-md-6 d-flex justify-content-md-end">
+                <nav class="header__nav mt-3 mt-md-0">
+                    <ul class="header__list d-flex justify-content-between justify-content-md-start">
+                        <li><a href="../pages/brands.html" class="header__link">Производители</a></li>
+                        <li><a href="../pages/types.html" class="header__link">Виды техники</a></li>
                         <li><a href="#" class="header__link">Вход для компаний</a><img src="../img/icons/header/sign.svg" alt="sign"></li>
                     </ul>
                 </nav>
@@ -110,7 +110,9 @@
                     </div>
                 </div>
                 <div class="col-2 p-0">
-                    <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,77 +121,79 @@
 <main>
     <div class="container">
         <div class="category__info">
-            <a href="#">RemTech</a><span>&frasl;</span><a href="#">Ремонт</a><span>&frasl;</span>Ремонт портативной техники
+            <a href="#">RemTech</a><span>&frasl;</span><a href="#">Ремонт</a><span>&frasl;</span>Техпрофикс
         </div>
     </div>
     <section class="about-company">
         <div class="container">
             <nav class="about-company__nav">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-4 col-md-2 mt-3 mt-md-0">
                         <a href="#" class="about-company__link">Описание</a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4 col-md-2 mt-3 mt-md-0">
                         <a href="#" class="about-company__link">Адреса</a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4 col-md-2 mt-3 mt-md-0">
                         <a href="#" class="about-company__link">Цены</a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4 col-md-2 mt-3 mt-md-0">
                         <a href="#" class="about-company__link">Отзывы</a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4 col-md-2 mt-3 mt-md-0">
                         <a href="#" class="about-company__link">Фото</a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4 col-md-2 mt-3 mt-md-0">
                         <a href="#" class="about-company__link">Сертификаты</a>
                     </div>
                 </div>
             </nav>
-            <div class="about-company__info-wr d-flex align-items-center">
-                <img src="../img/icons/review/img_1-xl.webp" alt="technoprofix-xl">
-                <div class="about-company__info d-flex flex-column">
-                    <span class="about-company__title">Сеть ремонтных мастерских</span>
-                    <h1 class="about-company__name">ТЕХПРОФИКС</h1>
-                    <div class="about-company__rate d-flex">
-                        <div class="grade">4.5</div>
-                        <div class="stars stars_l-mr">
-                            <span class="stars-star stars-star_full"></span>
-                            <span class="stars-star stars-star_full"></span>
-                            <span class="stars-star stars-star_full"></span>
-                            <span class="stars-star stars-star_full"></span>
-                            <span class="stars-star stars-star_half"></span>
+            <div class="about-company__info-wr d-flex flex-column align-items-end align-items-md-start">
+                <div class="about-company__name-wr d-flex justify-content-between">
+                    <img src="../img/icons/review/img_1-xl.webp" alt="technoprofix-xl">
+                    <div class="about-company__info d-flex flex-column">
+                        <span class="about-company__title">Сеть ремонтных мастерских</span>
+                        <h1 class="about-company__name">ТЕХПРОФИКС</h1>
+                        <div class="about-company__rate d-flex">
+                            <div class="grade">4.5</div>
+                            <div class="stars stars_l-mr">
+                                <span class="stars-star stars-star_full"></span>
+                                <span class="stars-star stars-star_full"></span>
+                                <span class="stars-star stars-star_full"></span>
+                                <span class="stars-star stars-star_full"></span>
+                                <span class="stars-star stars-star_half"></span>
+                            </div>
+                            <a href="#" class="link">4 отзыва</a>
                         </div>
-                        <a href="#" class="link">4 отзыва</a>
                     </div>
                 </div>
                 <a href="tel:+78122431125" class="phone phone_border phone_ml mt-2">8 (812) 243-11-25</a>
             </div>
-            <div class="row justify-content-between">
-                <div class="col-7">
+            <div class="row justify-content-between mt-0 mt-md-5">
+                <div class="col-12 col-md-7">
                     <div class="about-company__privilege">
-                        <ul class="d-flex company__list company__list_large company__list_mb">
+                        <ul class="d-flex company__list mt-5 mt-md-0 flex-wrap flex-lg-nowrap company__list_large company__list_mb">
                             <li><a href="#" class="company__link">Оплата картой</a></li>
                             <li><a href="#" class="company__link">Выезд мастера</a></li>
                             <li><a href="#" class="company__link">Срочный ремонт</a></li>
                             <li><a href="#" class="company__link">Вызов курьера</a></li>
                             <li><a href="#" class="company__link">Бесплатна диагностика</a></li>
                         </ul>
-                        <h2 class="title title_left">Преимущества</h2>
-                        <div class="about-company__master-wr d-flex">
-                            <ul class="company__master-list">
+                        <h2 class="title title_left fs-2">Преимущества</h2>
+                        <div class="about-company__master-wr d-flex flex-column flex-md-row justify-content-md-between">
+                            <ul class="company__master-list flex-column order-1 order-md-0 mt-4 mt-md-0">
                                 <li>Выезд мастера в день обращения</li>
                                 <li>Гарантия работы 1 год</li>
                                 <li>90% ремонтов менее чем за сутки</li>
                                 <li>90% ремонтов менее чем за сутки</li>
                             </ul>
-                            <ul class="about-company__founded">
+                            <ul class="about-company__founded order-0 order-md-1">
                                 <li><span>Основан в 2017 году</span></li>
                                 <li class="mt-2 mb-3"><span>19</span> филиалов в <span>2</span> городах</li>
                                 <li><span>162</span> сотрудника</li>
                             </ul>
                         </div>
-                        <h2 class="title title_left">Адреса</h2>
+                        <h2 class="title title_left fs-2">Адреса</h2>
                         <div class="mt-4 company__metro-wrapper d-flex">
                             <div class="company__metro d-flex flex-column">
                                 <span class="company__nearby">11 мастерских рядом с вами</span>
@@ -202,8 +206,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="about-company__map">
+                <div class="col-12 col-md-4">
+                    <div class="about-company__map mt-3 mt-md-0">
                         <img src="../img/icons/about-company/map.webp" alt="map">
                         <div class="about-company__metro d-flex">
                             <span>Елизаровская</span>
@@ -221,16 +225,16 @@
             </div>
             <div class="about-company-accordion">
                 <div class="row">
-                    <div class="col-7">
-                        <h2 class="title title_left">Цены на ремонт</h2>
+                    <div class="col-12 col-md-8">
+                        <h2 class="title title_left fs-2">Цены на ремонт</h2>
                         <div class="about-company__accordion-wr">
                             <div class="accordion accordion-flush">
                                 <div class="accordion-item about-company-accordion__item mb-3">
-                                    <h2 class="accordion-header" id="flush-headingSix">
+                                    <h3 class="accordion-header" id="flush-headingSix">
                                         <button class="about-company-accordion__button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                                             Крупная бытовая техника
                                         </button>
-                                    </h2>
+                                    </h3>
                                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <div class="accordion-body">
@@ -249,11 +253,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item about-company-accordion__item mb-3">
-                                    <h2 class="accordion-header" id="flush-headingSeven">
+                                    <h3 class="accordion-header" id="flush-headingSeven">
                                         <button class="about-company-accordion__button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
                                             Портативная техника
                                         </button>
-                                    </h2>
+                                    </h3>
                                     <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <div class="accordion-body">
@@ -272,11 +276,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item about-company-accordion__item">
-                                    <h2 class="accordion-header" id="flush-headingEight">
+                                    <h3 class="accordion-header" id="flush-headingEight">
                                         <button class="about-company-accordion__button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
                                             Компьютерная техника
                                         </button>
-                                    </h2>
+                                    </h3>
                                     <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <ul>
@@ -295,7 +299,7 @@
                             </div>
                         </div>
                         <div class="about-company__reviews">
-                            <h2 class="title title_left title_ml">Отзывы:</h2>
+                            <h2 class="title title_left title_ml fs-2">Отзывы:</h2>
                             <div class="about-company__reviews-wr d-flex align-items-center mt-3 mb-3">
                                 <div class="grade grade_mr">4.5</div>
                                 <div class="stars">
@@ -384,22 +388,24 @@
                             </div>
                         </div>
                         <div class="about-company-feedback">
-                            <span class="title title_left title_ml">Добавить отзыв</span>
-                            <form action="#" class="about-company-feedback__form">
-                                <div class="about-company-feedback__name d-flex justify-content-between align-items-center">
+                            <span class="title title_left title_ml fs-2">Добавить отзыв</span>
+                            <form action="#" class="about-company-feedback__form d-flex flex-wrap">
+                                <div class="about-company-feedback__name w-100 d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
                                     <input placeholder="Ваше имя" aria-label="" type="text">
-                                    <div class="about-company-feedback__you-p">Ваша оценка</div>
-                                    <div class="rating-area">
-                                        <input type="radio" id="star-5" name="rating" value="5">
-                                        <label for="star-5" title="Оценка «5»"></label>
-                                        <input type="radio" id="star-4" name="rating" value="4">
-                                        <label for="star-4" title="Оценка «4»"></label>
-                                        <input type="radio" id="star-3" name="rating" value="3">
-                                        <label for="star-3" title="Оценка «3»"></label>
-                                        <input type="radio" id="star-2" name="rating" value="2">
-                                        <label for="star-2" title="Оценка «2»"></label>
-                                        <input type="radio" id="star-1" name="rating" value="1">
-                                        <label for="star-1" title="Оценка «1»"></label>
+                                    <div class="d-flex align-items-center justify-content-between justify-content-md-start mt-4 mt-md-0">
+                                        <div class="about-company-feedback__you-p">Ваша оценка</div>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
                                     </div>
                                 </div>
                                 <textarea placeholder="Ваш отзыв" aria-label="" name="#" cols="30" rows="10"></textarea>
@@ -407,85 +413,85 @@
                             </form>
                         </div>
                         <div class="about-company__photos">
-                            <h2 class="title title_left">Фото:</h2>
+                            <h2 class="title title_left fs-2">Фото:</h2>
                             <div class="row">
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/photo_1.webp" alt="photo_1">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/photo_2.webp" alt="photo_2">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/photo_3.webp" alt="photo_3">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/photo_4.webp" alt="photo_4">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/photo_5.webp" alt="photo_5">
                                 </div>
-                                <div class="col-4 mt-4">
-                                    <a href="#" class="about-company__photo-link d-flex align-items-center">+7 фото</a>
+                                <div class="col-6 col-sm-4 mt-4">
+                                    <a href="#" class="about-company__photo-link d-flex flex-column justify-content-center align-items-center">+7 фото</a>
                                 </div>
                             </div>
                         </div>
                         <div class="about-company__photos">
-                            <h2 class="title title_left">Сертификаты и дипломы:</h2>
+                            <h2 class="title title_left fs-2">Сертификаты и дипломы:</h2>
                             <div class="row">
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/diplom_1.webp" alt="photo_1">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/diplom_2.webp" alt="photo_2">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/diplom_3.webp" alt="photo_3">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/diplom_4.webp" alt="photo_4">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/diplom_5.webp" alt="photo_5">
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-6 col-sm-4 mt-4">
                                     <img src="../img/icons/about-company/diplom_1.webp" alt="photo_5">
                                 </div>
                             </div>
                         </div>
                         <div class="about-company__photos">
-                            <h2 class="title title_left">Акции:</h2>
+                            <h2 class="title title_left fs-2">Акции:</h2>
                             <div class="row">
-                                <div class="col-4 mt-4">
+                                <div class="col-12 col-sm-6 col-md-4 mt-4">
                                     <div class="about-company-stock about-company-stock_1 d-flex flex-column justify-content-between">
                                         <div class="about-company-stock__date d-flex justify-content-center align-items-center">до 31 октября 2021</div>
                                         <div class="about-company-stock__desc">Красивая осень - скидка 20% на ремонт бьюти-техники</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-12 col-sm-6 col-md-4 mt-4">
                                     <div class="about-company-stock about-company-stock_2 d-flex flex-column justify-content-between">
                                         <div class="about-company-stock__date d-flex justify-content-center align-items-center">до 15 сентября 2021</div>
                                         <div class="about-company-stock__desc">Вкусный сентябрь - скидки на ремонт техники для кухни</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-12 col-sm-6 col-md-4 mt-4">
                                     <div class="about-company-stock about-company-stock_3 d-flex flex-column justify-content-between">
                                         <div class="about-company-stock__date d-flex justify-content-center align-items-center">до 22 декабря 2021</div>
                                         <div class="about-company-stock__desc">Акция на ремонт техники Apple - скидки до 40%</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-12 col-sm-6 col-md-4 mt-4">
                                     <div class="about-company-stock about-company-stock_4 d-flex flex-column justify-content-between">
                                         <div class="about-company-stock__date d-flex justify-content-center align-items-center">до 31 октября 2021</div>
                                         <div class="about-company-stock__desc">Скидки на ремонт духовых шкафов и печей</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-12 col-sm-6 col-md-4 mt-4">
                                     <div class="about-company-stock about-company-stock_5 d-flex flex-column justify-content-between">
                                         <div class="about-company-stock__date d-flex justify-content-center align-items-center">до 15 сентября 2021</div>
                                         <div class="about-company-stock__desc">Скидки на ремонт швейных машин</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mt-4">
+                                <div class="col-12 col-sm-6 col-md-4 mt-4">
                                     <div class="about-company-stock about-company-stock_6 d-flex flex-column justify-content-between">
                                         <div class="about-company-stock__date d-flex justify-content-center align-items-center">до 22 декабря 2021</div>
                                         <div class="about-company-stock__desc">Акция на ремонт техники Apple - скидки до 40%</div>
@@ -494,7 +500,7 @@
                             </div>
                         </div>
                         <div class="about-company-faq">
-                            <h2 class="title title_left">Ответы на вопросы</h2>
+                            <h2 class="title title_left fs-2">Ответы на вопросы</h2>
                             <h3 class="mt-5 about-company-faq__title">Можно ли доверять рейтингу организации?</h3>
                             <p class="about-company-faq__text">
                                 Каждый отзыв оставляют реальные клиенты заведения и верифицированы модераторами портала. А представители организации могут ответить на интересующий вас вопрос в комментариях.
@@ -509,7 +515,7 @@
                             </p>
                         </div>
                         <div class="about-company-social">
-                            <div class="title title_left">Поделиться ссылкой в соцсетях</div>
+                            <div class="title title_left fs-2">Поделиться ссылкой в соцсетях</div>
                             <div class="mt-5 about-company-social__wr d-flex">
                                 <a href="#" class="about-company-social__link">
                                     <img src="../img/icons/about-company/telegram.svg" alt="telegram">
@@ -531,7 +537,6 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -541,24 +546,24 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <div class="row">
-                <div class="col-3">
-                    <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
-                </div>
-                <div class="col-9">
-                    <ul class="footer__list d-flex flex-wrap justify-content-between">
-                        <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
-                        <li><a href="#" class="footer__link">Цифровая техника</a></li>
-                        <li><a href="#" class="footer__link">Apple</a></li>
-                        <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
-                        <li><a href="#" class="footer__link">Бытовая техника</a></li>
-                        <li><a href="#" class="footer__link">Электроинструмент</a></li>
-                        <li><a href="#" class="footer__link">Добавить организацию</a></li>
-                        <li><a href="#" class="footer__link">Кухонная техника</a></li>
-                        <li><a href="#" class="footer__link">Полный каталог</a></li>
-                    </ul>
-                </div>
+            <div class="footer__list">
+                <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
             </div>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
+                <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
+                <li><a href="#" class="footer__link">Добавить организацию</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Цифровая техника</a></li>
+                <li><a href="#" class="footer__link">Бытовая техника</a></li>
+                <li><a href="#" class="footer__link">Кухонная техника</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Apple</a></li>
+                <li><a href="#" class="footer__link">Электроинструмент</a></li>
+                <li><a href="#" class="footer__link">Полный каталог</a></li>
+            </ul>
         </div>
     </div>
 </footer>

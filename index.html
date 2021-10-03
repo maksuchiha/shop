@@ -10,18 +10,18 @@
 <body>
 <header class="header pt-3 pb-3">
     <div class="container">
-        <div class="header__wrapper row align-items-center">
-            <div class="col-3">
+        <div class="header__wrapper row align-items-center justify-content-between">
+            <div class="col-6 col-sm-3 d-flex">
                 <a href="#" class="logo">
                     <img src="img/logo/logo.svg" alt="logo" class="logo__img">
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3 d-flex justify-content-end justify-content-sm-start">
                 <a href="#" class="header__link d-flex align-items-center"><img src="img/icons/header/geo.svg" alt="geo">Санкт-Петербург</a>
             </div>
-            <div class="col-6 d-flex justify-content-end">
-                <nav class="header__nav">
-                    <ul class="header__ul d-flex">
+            <div class="col-12 col-sm-6 d-flex justify-content-sm-end">
+                <nav class="header__nav mt-3 mt-sm-0">
+                    <ul class="header__list d-flex justify-content-between justify-content-sm-start">
                         <li><a href="pages/brands.html" class="header__link">Производители</a></li>
                         <li><a href="pages/types.html" class="header__link">Виды техники</a></li>
                         <li><a href="#" class="header__link">Вход для компаний</a><img src="img/icons/header/sign.svg" alt="sign"></li>
@@ -31,9 +31,9 @@
         </div>
     </div>
     <nav class="nav-menu mt-3">
-        <div class="container nav-menu__container">
-            <div class="row">
-                <div class="col-2 p-0">
+        <div class="container">
+            <div class="row justify-content-between flex-wrap">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Цифровая техника
@@ -50,7 +50,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Бытовая техника
@@ -65,7 +65,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Кухонная техника
@@ -82,7 +82,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Электроинструмент
@@ -97,7 +97,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Apple
@@ -109,7 +109,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
                     </div>
@@ -135,9 +135,9 @@
     <section class="technical">
         <div class="container">
             <div class="technical__items row">
-                <div class="col-6">
-                    <div class="technical-item d-flex">
-                        <div class="technical-item__left">
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="technical-item d-flex justify-content-between justify-content-md-start">
+                        <div class="technical-item__text col-7">
                             <h2 class="technical-item__title">Цифровая техника</h2>
                             <div class="technical-item__links">
                                 <a href="#" class="link">Ноутбук,</a>
@@ -153,14 +153,14 @@
                                 <a href="#" class="link">Эл. книга</a>
                             </div>
                         </div>
-                        <div class="technical-item__right">
+                        <div class="technical-item__image col-5">
                             <img src="img/icons/technical/notebook.webp" alt="notebook">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="technical-item d-flex">
-                        <div class="technical-item__left">
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="technical-item d-flex justify-content-between justify-content-md-start">
+                        <div class="technical-item__text col-7">
                             <h2 class="technical-item__title">Крупная бытовая техника</h2>
                             <div class="technical-item__links">
                                 <a href="#" class="link">Стиральная машина,</a>
@@ -173,14 +173,14 @@
                                 <a href="#" class="link">Духовка</a>
                             </div>
                         </div>
-                        <div class="technical-item__right">
+                        <div class="technical-item__image col-5">
                             <img src="img/icons/technical/wash_machine.webp" alt="wash_machine">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="technical-item d-flex">
-                        <div class="technical-item__left">
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="technical-item d-flex justify-content-between justify-content-md-start">
+                        <div class="technical-item__text col-7">
                             <h2 class="technical-item__title">Мелкая бытовая техника</h2>
                             <div class="technical-item__links">
                                 <a href="#" class="link">Кофемашина,</a>
@@ -193,14 +193,14 @@
                                 <a href="#" class="link">Швейная машинка</a>
                             </div>
                         </div>
-                        <div class="technical-item__right">
+                        <div class="technical-item__image col-5">
                             <img src="img/icons/technical/sw_machine.webp" alt="sw_machine">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="technical-item d-flex">
-                        <div class="technical-item__left">
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="technical-item d-flex justify-content-between justify-content-md-start">
+                        <div class="technical-item__text col-7">
                             <h2 class="technical-item__title">Аудио-видео техника</h2>
                             <div class="technical-item__links">
                                 <a href="#" class="link">Телевизор,</a>
@@ -211,14 +211,14 @@
                                 <a href="#" class="link">Усилитель</a>
                             </div>
                         </div>
-                        <div class="technical-item__right">
+                        <div class="technical-item__image col-5">
                             <img src="img/icons/technical/av.webp" alt="av">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="technical-item d-flex">
-                        <div class="technical-item__left">
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="technical-item d-flex justify-content-between justify-content-md-start">
+                        <div class="technical-item__text col-7">
                             <h2 class="technical-item__title">Аудио-видео техника</h2>
                             <div class="technical-item__links">
                                 <a href="#" class="link">Шуруповёрт,</a>
@@ -229,14 +229,14 @@
                                 <a href="#" class="link">Сварочный аппарат</a>
                             </div>
                         </div>
-                        <div class="technical-item__right">
+                        <div class="technical-item__image col-5">
                             <img src="img/icons/technical/tool.webp" alt="tool">
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="technical-item d-flex">
-                        <div class="technical-item__left">
+                <div class="col-12 col-md-6 mt-4">
+                    <div class="technical-item d-flex justify-content-between justify-content-md-start">
+                        <div class="technical-item__text col-7">
                             <h2 class="technical-item__title">Садовая техника</h2>
                             <div class="technical-item__links">
                                 <a href="#" class="link">Газонокосилка,</a>
@@ -246,7 +246,7 @@
                                 <a href="#" class="link">Снегоуборщик</a>
                             </div>
                         </div>
-                        <div class="technical-item__right">
+                        <div class="technical-item__image col-5">
                             <img src="img/icons/technical/garden.webp" alt="garden">
                         </div>
                     </div>
@@ -295,7 +295,7 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="about__wrap col-md-8">
+                <div class="about__wrap col-12 col-sm-8">
                     <h2 class="title title_white title_left">О проекте</h2>
                     <p class="about__text about__text_mt">Нужно быстро починить технику? Мы собрали всю необходимую информацию о сервисных центрах и ремонтных мастерских в одном месте. Собрали организации в Санкт-Петербурге на основе рейтинга и отзывов посетителей. Ниш сайт предоставляет самую необходимую информацию: контакты, адреса, цены на самые востребованные работы.</p>
                     <h2 class="title title_white title_left">Поиск сервисного центра по станции метро и не только</h2>
@@ -315,7 +315,7 @@
     <section class="repair">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-6 col-sm-4 col-md-3">
                     <div class="repair__item">
                         <h2 class="title title_left">Портативная техника</h2>
                         <div class="reaper__links mt-4 d-flex flex-column">
@@ -334,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-sm-4 col-md-3">
                     <div class="repair__item">
                         <h2 class="title title_left">Портативная техника</h2>
                         <div class="reaper__links mt-4 d-flex flex-column">
@@ -353,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-sm-4 col-md-3 mt-4 mt-sm-0">
                     <div class="repair__item">
                         <h2 class="title title_left">Электроинструменты</h2>
                         <div class="reaper__links mt-4 d-flex flex-column">
@@ -373,7 +373,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-sm-4 col-md-3 mt-4 mt-sm-0">
                     <div class="repair__item">
                         <h2 class="title title_left">Аудио и видеотехника</h2>
                         <div class="reaper__links mt-4 d-flex flex-column">
@@ -404,11 +404,11 @@
         <div class="container">
             <h2 class="title title_white">Больше всего сервисных центров</h2>
             <div class="places__wrapper">
-                <div class="row justify-content-between">
-                    <div class="col-xl-5 col-lg-6 col-md-6">
+                <div class="row">
+                    <div class="col-12 col-md-6">
                         <div class="places__stations">
-                            <span class="title title_white title_bold title_left">На станциях</span>
-                            <ul class="places__list mt-4 d-flex flex-wrap">
+                            <span class="title title_white">На станциях</span>
+                            <ul class="places__list d-flex flex-wrap">
                                 <li>Маяковская</li>
                                 <li>Площадь Восстания</li>
                                 <li>Комендантский проспект</li>
@@ -425,10 +425,10 @@
                             <a href="#" class="button button_middle">Все станции</a>
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-6 col-md-6">
+                    <div class="col-12 col-md-6 mt-5 mt-md-0">
                         <div class="places__stations">
-                            <span class="title title_white title_bold title_left">В районах</span>
-                            <ul class="places__list mt-4 d-flex flex-wrap">
+                            <span class="title title_white">В районах</span>
+                            <ul class="places__list d-flex flex-wrap">
                                 <li>Центральный</li>
                                 <li>Приморский</li>
                                 <li>Выборгский</li>
@@ -454,16 +454,16 @@
             <h2 class="title">Лучшие сервисы по отзывам клиентов</h2>
             <div class="review__wrapper mt-5">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="col-12 col-lg-3 col-md-6 mt-3 mt-lg-0">
                         <div class="review-item">
                             <div class="review-item__top d-flex align-items-center">
-                                <img class="review-item__img" src="img/icons/review/img_2.webp" alt="img_review">
+                                <img class="review-item__img" src="img/icons/review/img_1.webp" alt="img_review">
                                 <div class="review-item__name w-100">
-                                    <div class="d-flex justify-content-md-between flex-xl-column">
-                                        <a href="#" class="link mb-2">Мастер</a>
+                                    <div class="d-flex justify-content-between flex-md-column">
+                                        <a href="#" class="link mb-2">ТЕХПРОФИКС</a>
                                         <div class="grade mb-2">4.5</div>
                                     </div>
-                                    <div class="d-flex justify-content-md-between align-md-baseline flex-md-row-reverse flex-xl-column">
+                                    <div class="d-flex justify-content-between flex-row-reverse flex-column">
                                         <div class="stars stars_mb">
                                             <span class="stars-star stars-star_full"></span>
                                             <span class="stars-star stars-star_full"></span>
@@ -481,7 +481,87 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-12 col-lg-3 col-md-6 mt-3 mt-lg-0">
+                        <div class="review-item">
+                            <div class="review-item__top d-flex align-items-center">
+                                <img class="review-item__img" src="img/icons/review/img_2.webp" alt="img_review">
+                                <div class="review-item__name w-100">
+                                    <div class="d-flex justify-content-between flex-md-column">
+                                        <a href="#" class="link mb-2">Мастер</a>
+                                        <div class="grade mb-2">4.5</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row-reverse flex-md-column">
+                                        <div class="stars stars_mb">
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_half"></span>
+                                            <span class="stars-star stars-star_empty"></span>
+                                        </div>
+                                        <span class="review-item__number">4 отзыва</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item__bottom">
+                                м. Проспект Большевиков, пр. Пятилеток 14 к 1<br>
+                                м. Международная, ул. Белы Куна, д. 20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 mt-3 mt-lg-0">
+                        <div class="review-item">
+                            <div class="review-item__top d-flex align-items-center">
+                                <img class="review-item__img" src="img/icons/review/img_1.webp" alt="img_review">
+                                <div class="review-item__name w-100">
+                                    <div class="d-flex justify-content-between flex-md-column">
+                                        <a href="#" class="link mb-2">ТЕХПРОФИКС</a>
+                                        <div class="grade mb-2">4.5</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row-reverse flex-md-column">
+                                        <div class="stars stars_mb">
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_half"></span>
+                                            <span class="stars-star stars-star_empty"></span>
+                                        </div>
+                                        <span class="review-item__number">4 отзыва</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item__bottom">
+                                м. Проспект Большевиков, пр. Пятилеток 14 к 1<br>
+                                м. Международная, ул. Белы Куна, д. 20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 mt-3 mt-lg-0">
+                        <div class="review-item">
+                            <div class="review-item__top d-flex align-items-center">
+                                <img class="review-item__img" src="img/icons/review/img_2.webp" alt="img_review">
+                                <div class="review-item__name w-100">
+                                    <div class="d-flex justify-content-between flex-md-column">
+                                        <a href="#" class="link mb-2">Мастер</a>
+                                        <div class="grade mb-2">4.5</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row-reverse flex-md-column">
+                                        <div class="stars stars_mb">
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_full"></span>
+                                            <span class="stars-star stars-star_half"></span>
+                                            <span class="stars-star stars-star_empty"></span>
+                                        </div>
+                                        <span class="review-item__number">4 отзыва</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item__bottom">
+                                м. Проспект Большевиков, пр. Пятилеток 14 к 1<br>
+                                м. Международная, ул. Белы Куна, д. 20
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -491,7 +571,7 @@
             <h2 class="title">Последние отзывы</h2>
             <div class="last-review__wrapper">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-md-4 col-lg-3 col-12 col-sm-6">
                         <div class="last-review-item">
                             <div class="last-review-item__top d-flex justify-content-between">
                                 <div class="last-review-item__left">
@@ -511,10 +591,10 @@
                             </div>
                             <a href="pages/about-company.html" class="link mb-2">ТЕХПРОФИКС</a>
                             <p class="last-review-item__text">Починили чайник, но по срокам обещаным не уложились, еще и чайник вернули с каким-то пятном. Думал, что предложат скидку, но мне еще и нагрубили сверху ...</p>
-                            <a href="#" class="link">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="link mt-auto">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-4 col-lg-3 col-12 col-sm-6 mt-3 mt-sm-0">
                         <div class="last-review-item">
                             <div class="last-review-item__top d-flex justify-content-between">
                                 <div class="last-review-item__left">
@@ -534,10 +614,10 @@
                             </div>
                             <a href="#" class="link mb-2">Мастер</a>
                             <p class="last-review-item__text">Очень быстро починили мой любимый фен, предложили разные варианты, подороже и подешевле, все понятно объяснили и очень дружелюбно, от  ...</p>
-                            <a href="#" class="link">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="link mt-auto">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-4 col-lg-3 col-12 col-sm-6">
                         <div class="last-review-item">
                             <div class="last-review-item__top d-flex justify-content-between">
                                 <div class="last-review-item__left">
@@ -557,10 +637,10 @@
                             </div>
                             <a href="pages/about-company.html" class="link mb-2">ТЕХПРОФИКС</a>
                             <p class="last-review-item__text">Починили чайник, но по срокам обещанным не уложились, еще и чайник вернули с каким-то пятном. Думал, что предложат скидку, но мне еще и нагрубили сверху ...</p>
-                            <a href="#" class="link">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="link mt-auto">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-4 col-lg-3 col-12 col-sm-6">
                         <div class="last-review-item">
                             <div class="last-review-item__top d-flex justify-content-between">
                                 <div class="last-review-item__left">
@@ -580,7 +660,7 @@
                             </div>
                             <a href="#" class="link mb-2">Мастер</a>
                             <p class="last-review-item__text">Очень быстро починили мой любимый фен, предложили разные варианты, подороже и подешевле, все понятно объяснили и очень дружелюбно, от  ...</p>
-                            <a href="#" class="link">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="link mt-auto">Показать полностью<img src="img/icons/review/arrow.svg" alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -591,24 +671,24 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <div class="row">
-                <div class="col-3">
-                    <a href="#" class="footer__logo"><img src="img/logo/footer-logo.svg" alt="footer-logo"></a>
-                </div>
-                <div class="col-9">
-                    <ul class="footer__list d-flex flex-wrap justify-content-between">
-                        <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
-                        <li><a href="#" class="footer__link">Цифровая техника</a></li>
-                        <li><a href="#" class="footer__link">Apple</a></li>
-                        <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
-                        <li><a href="#" class="footer__link">Бытовая техника</a></li>
-                        <li><a href="#" class="footer__link">Электроинструмент</a></li>
-                        <li><a href="#" class="footer__link">Добавить организацию</a></li>
-                        <li><a href="#" class="footer__link">Кухонная техника</a></li>
-                        <li><a href="#" class="footer__link">Полный каталог</a></li>
-                    </ul>
-                </div>
+            <div class="footer__list">
+                <a href="#" class="footer__logo"><img src="img/logo/footer-logo.svg" alt="footer-logo"></a>
             </div>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
+                <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
+                <li><a href="#" class="footer__link">Добавить организацию</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Цифровая техника</a></li>
+                <li><a href="#" class="footer__link">Бытовая техника</a></li>
+                <li><a href="#" class="footer__link">Кухонная техника</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Apple</a></li>
+                <li><a href="#" class="footer__link">Электроинструмент</a></li>
+                <li><a href="#" class="footer__link">Полный каталог</a></li>
+            </ul>
         </div>
     </div>
 </footer>

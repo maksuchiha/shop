@@ -10,20 +10,20 @@
 <body>
 <header class="header pt-3 pb-3">
     <div class="container">
-        <div class="header__wrapper row align-items-center">
-            <div class="col-3">
+        <div class="header__wrapper row align-items-center justify-content-between">
+            <div class="col-6 col-sm-3 d-flex">
                 <a href="#" class="logo">
                     <img src="../img/logo/logo.svg" alt="logo" class="logo__img">
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-3 d-flex justify-content-end justify-content-sm-start">
                 <a href="#" class="header__link d-flex align-items-center"><img src="../img/icons/header/geo.svg" alt="geo">Санкт-Петербург</a>
             </div>
-            <div class="col-7 d-flex justify-content-end">
-                <nav class="header__nav">
-                    <ul class="header__ul d-flex">
-                        <li><a href="#" class="header__link">Производители</a></li>
-                        <li><a href="#" class="header__link">Виды техники</a></li>
+            <div class="col-12 col-sm-6 d-flex justify-content-sm-end">
+                <nav class="header__nav mt-3 mt-sm-0">
+                    <ul class="header__list d-flex justify-content-between justify-content-sm-start">
+                        <li><a href="../pages/brands.html" class="header__link">Производители</a></li>
+                        <li><a href="../pages/types.html" class="header__link">Виды техники</a></li>
                         <li><a href="#" class="header__link">Вход для компаний</a><img src="../img/icons/header/sign.svg" alt="sign"></li>
                     </ul>
                 </nav>
@@ -31,9 +31,9 @@
         </div>
     </div>
     <nav class="nav-menu mt-3">
-        <div class="container nav-menu__container">
-            <div class="row">
-                <div class="col-2 p-0">
+        <div class="container">
+            <div class="row justify-content-between flex-wrap">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Цифровая техника
@@ -50,7 +50,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Бытовая техника
@@ -65,7 +65,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Кухонная техника
@@ -82,7 +82,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Электроинструмент
@@ -97,7 +97,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Apple
@@ -109,8 +109,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
-                    <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,12 +128,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <h1 class="title title_big title_left">Сервисные центры и ремонтные мастерские Санкт-Петербурга по производителям</h1>
+                    <h1 class="title title_big title_left fs-2">Сервисные центры и ремонтные мастерские Санкт-Петербурга по производителям</h1>
                 </div>
             </div>
             <div class="service-brands__links d-flex flex-column">
-                <div class="d-flex">
-                    <a href="#" class="service-brands__link">a</a>
+                <div class="d-flex flex-wrap">
+                    <a href="#" class="service-brands__link service-brands__link_active">a</a>
                     <a href="#" class="service-brands__link">b</a>
                     <a href="#" class="service-brands__link">c</a>
                     <a href="#" class="service-brands__link">d</a>
@@ -164,140 +166,140 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">AEG</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Asus</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Apple</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Acer</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Amica</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Aquarius</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Aist</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Ardo</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Apach</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">AKPO</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Alcatel</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Archos</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Agestar</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">American Audio</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Akai</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Alinco</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Apelson</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Aleks</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">ALAN</a>
                         <span class="mt-3">123 адреса</span>
                         <span class="mt-1">в Санкт-Петербургe</span>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
                     <div class="service-brands__item d-flex flex-column justify-content-center align-items-center">
                         <a href="#" class="link">Ariete</a>
                         <span class="mt-3">123 адреса</span>
@@ -311,24 +313,24 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <div class="row">
-                <div class="col-3">
-                    <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
-                </div>
-                <div class="col-9">
-                    <ul class="footer__list d-flex flex-wrap justify-content-between">
-                        <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
-                        <li><a href="#" class="footer__link">Цифровая техника</a></li>
-                        <li><a href="#" class="footer__link">Apple</a></li>
-                        <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
-                        <li><a href="#" class="footer__link">Бытовая техника</a></li>
-                        <li><a href="#" class="footer__link">Электроинструмент</a></li>
-                        <li><a href="#" class="footer__link">Добавить организацию</a></li>
-                        <li><a href="#" class="footer__link">Кухонная техника</a></li>
-                        <li><a href="#" class="footer__link">Полный каталог</a></li>
-                    </ul>
-                </div>
+            <div class="footer__list">
+                <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
             </div>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
+                <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
+                <li><a href="#" class="footer__link">Добавить организацию</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Цифровая техника</a></li>
+                <li><a href="#" class="footer__link">Бытовая техника</a></li>
+                <li><a href="#" class="footer__link">Кухонная техника</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Apple</a></li>
+                <li><a href="#" class="footer__link">Электроинструмент</a></li>
+                <li><a href="#" class="footer__link">Полный каталог</a></li>
+            </ul>
         </div>
     </div>
 </footer>

@@ -10,20 +10,20 @@
 <body>
 <header class="header pt-3 pb-3">
     <div class="container">
-        <div class="header__wrapper row align-items-center">
-            <div class="col-3">
+        <div class="header__wrapper row align-items-center justify-content-between">
+            <div class="col-6 col-sm-3 d-flex">
                 <a href="#" class="logo">
                     <img src="../img/logo/logo.svg" alt="logo" class="logo__img">
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-sm-3 d-flex justify-content-end justify-content-sm-start">
                 <a href="#" class="header__link d-flex align-items-center"><img src="../img/icons/header/geo.svg" alt="geo">Санкт-Петербург</a>
             </div>
-            <div class="col-7 d-flex justify-content-end">
-                <nav class="header__nav">
-                    <ul class="header__ul d-flex">
-                        <li><a href="#" class="header__link">Производители</a></li>
-                        <li><a href="#" class="header__link">Виды техники</a></li>
+            <div class="col-12 col-sm-6 d-flex justify-content-sm-end">
+                <nav class="header__nav mt-3 mt-sm-0">
+                    <ul class="header__list d-flex justify-content-between justify-content-sm-start">
+                        <li><a href="../pages/brands.html" class="header__link">Производители</a></li>
+                        <li><a href="../pages/types.html" class="header__link">Виды техники</a></li>
                         <li><a href="#" class="header__link">Вход для компаний</a><img src="../img/icons/header/sign.svg" alt="sign"></li>
                     </ul>
                 </nav>
@@ -31,9 +31,9 @@
         </div>
     </div>
     <nav class="nav-menu mt-3">
-        <div class="container nav-menu__container">
-            <div class="row">
-                <div class="col-2 p-0">
+        <div class="container">
+            <div class="row justify-content-between flex-wrap">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Цифровая техника
@@ -50,7 +50,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Бытовая техника
@@ -65,7 +65,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Кухонная техника
@@ -82,7 +82,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Электроинструмент
@@ -97,7 +97,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
+                <div class="col-auto">
                     <div class="dropdown">
                         <a class="nav-menu__click btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Apple
@@ -109,8 +109,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 p-0">
-                    <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <a href="#" class="nav-menu__click nav-menu__click_af-n d-flex justify-content-center align-items-center">Полный каталог</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,35 +122,41 @@
     <section class="repair-places">
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <h1 class="title title_search title_left title_left">
-                        <span>Сервисные центры и ремонт Ariete</span><br>
+                <div class="col-12 order-1 order-sm-0 col-sm-8 col-md-9">
+                    <h1 class="title title_search title_lf">
+                        <span>Ремонт портативной техники</span><br>
                         в Санкт-Петербурге
                         <span class="title__firm">1235 фирмы</span>
                     </h1>
-                    <div class="repair-places__wrapper">
+                    <div class="repair-places__wrapper d-flex">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-12 col-md-8">
                                 <div class="repair-places__left">
                                     <p class="repair-places__text">Ищете, где отремонтировать портативную технику в Санкт-Петербурге? Remtech.ru подобрал 1285 лучших сервисных центров на основе рейтинга. Честные оценки пользователей, выгодные цены от 160 рублей, актуальные адреса и телефоны. Удобное расположение рядом - все ближайшие центры города показаны на карте</p>
-                                    <div class="repair-places__result d-flex">
-                                        <img src="../img/icons/repair/search.svg" alt="search">
-                                        найдено 1285  сервисных центров  и 3485  подтвержденных отзывов
-                                        <div class="stars stars_mr-l">
-                                            <span class="stars-star stars-star_full"></span>
+                                    <div class="repair-places__result d-flex flex-column">
+                                        <div class="mb-3 mb-md-0">
+                                            <img src="../img/icons/repair/search.svg" alt="search">
+                                            найдено 1285  сервисных центров  и 3485  подтвержденных отзывов
                                         </div>
-                                        средний рейтинг 3.7
+                                        <div class="d-flex">
+                                            <div class="stars">
+                                                <span class="stars-star stars-star_full"></span>
+                                            </div>
+                                            <span class="repair-places__ml">средний рейтинг 3.7</span>
+                                        </div>
                                     </div>
                                     <div class="repair-places__also d-flex align-items-center">
                                         Смотрите так же:
-                                        <a href="#" class="link link_small link_margin">ремонт мобильных телефонов</a>
-                                        <a href="#" class="link link_small link_margin">ремонт наушников</a>
+                                        <div class="d-flex flex-column flex-sm-row">
+                                            <a href="#" class="link link_small link_margin">ремонт мобильных телефонов</a>
+                                            <a href="#" class="link link_small link_margin">ремонт наушников</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-md-4 d-none d-md-flex mt-4 mt-md-0">
                                 <div class="repair-places__right">
-                                    <div class="repair-places__about d-flex flex-column">
+                                    <div class="repair-places__about flex-column">
                                         <div>
                                             <img src="../img/icons/repair/home.svg" alt="home">1285  центров в Санкт-Петербурге
                                         </div>
@@ -164,38 +172,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <img src="../img/icons/repair/ariete.webp" alt="Ariete">
+                <div class="col-12 order-0 order-sm-1 col-sm-4 col-md-3 d-flex justify-content-center d-sm-block">
+                    <img class="repair-places__logo" src="../img/icons/repair/ariete.webp" alt="Ariete">
+                    <div class="repair-places__about d-flex flex-column d-none d-sm-flex d-md-none mt-4 mt-md-0">
+                        <div>
+                            <img src="../img/icons/repair/home.svg" alt="home">1285  центров в Санкт-Петербурге
+                        </div>
+                        <div>
+                            <img src="../img/icons/repair/apply.svg" alt="apply">3485  подтвержденных отзывов
+                        </div>
+                        <div>
+                            <img src="../img/icons/repair/rub.svg" alt="rub">Цены: от 160 до 12 000₽
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="company">
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="category__info">
-                        RemTech<span>&frasl;</span>Ремонт<span>&frasl;</span>Ремонт портативной техники
-                    </div>
-                    <div class="category p-0">
-                        <div class="category__items mt-5">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="category-types d-flex">
-                                        <a href="#" class="category-types__link">Кофемашины</a>
-                                        <a href="#" class="category-types__link">Тостеры</a>
-                                        <a href="#" class="category-types__link">Хлебопечки</a>
-                                        <a href="#" class="category-types__link">Мультиварки</a>
-                                    </div>
-                                    <div class="category-buttons mt-5 mb-5">
-                                        <button class="category-buttons__button category-buttons__button_active category-buttons__button_rate">По рейтингу</button>
-                                        <button class="category-buttons__button category-buttons__button_review">По количеству отзывов</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 d-flex flex-column order-1 col-md-8 order-md-0">
                     <div class="company__wrapper company__wrapper_mb">
                         <div class="company__info d-flex justify-content-between">
                             <div class="company__name d-flex align-items-center">
@@ -217,7 +214,7 @@
                                 <a href="#" class="mt-3 link">4 отзыва</a>
                             </div>
                         </div>
-                        <ul class="d-flex company__list">
+                        <ul class="d-flex mt-4 flex-wrap justify-content-between justify-content-sm-start company__list">
                             <li><a href="#" class="company__link">Оплата картой</a></li>
                             <li><a href="#" class="company__link">Выезд мастера</a></li>
                             <li><a href="#" class="company__link">Срочный ремонт</a></li>
@@ -226,7 +223,7 @@
                         </ul>
                         <div class="company__places">
                             <div class="row d-flex justify-content-between">
-                                <div class="col-4">
+                                <div class="col-12 col-md-5">
                                     <ul class="company__master-list">
                                         <li>Выезд мастера в день обращения</li>
                                         <li>Гарантия работы 1 год</li>
@@ -234,10 +231,10 @@
                                         <li>90% ремонтов менее чем за сутки</li>
                                     </ul>
                                 </div>
-                                <div class="col-7">
-                                    <div class="company__metro-wrapper d-flex">
-                                        <img src="../img/icons/company/map.svg" alt="map">
-                                        <div class="company__metro d-flex flex-column">
+                                <div class="col-12 col-md-7">
+                                    <div class="company__metro-wrapper d-flex flex-column align-items-center align-content-sm-start flex-sm-row">
+                                        <img class="company__map mt-4 mt-sm-0 order-2" src="../img/icons/company/map.svg" alt="map">
+                                        <div class="company__metro d-flex flex-column mt-4 mt-sm-0">
                                             <span class="company__nearby">11 мастерских рядом с вами</span>
                                             <span class="company__mark">м. Елизаровская, пр. Елизарова, д.36</span>
                                             <span class="company__time">сегодня работает с 9:00 до 19:00</span>
@@ -274,10 +271,10 @@
                     <div class="company__wrapper">
                         <div class="company__info d-flex justify-content-between">
                             <div class="company__name d-flex align-items-center">
-                                <img src="../img/icons/review/img_3.webp" alt="master">
+                                <img src="../img/icons/review/img_1.webp" alt="technoprofix">
                                 <div class="company__contact d-flex flex-column">
-                                    <a href="#" class="link link_large">МАСТЕР</a>
-                                    <a href="tel:+78122536167" class="mt-3 phone">8 (812) 253-61-67</a>
+                                    <a href="#" class="link link_large">ТЕХПРОФИКС</a>
+                                    <a href="tel:+78122431125" class="mt-3 phone">8 (812) 243-11-25</a>
                                 </div>
                             </div>
                             <div class="company__rate d-flex flex-column align-items-end">
@@ -292,7 +289,7 @@
                                 <a href="#" class="mt-3 link">4 отзыва</a>
                             </div>
                         </div>
-                        <ul class="d-flex company__list">
+                        <ul class="d-flex flex-wrap justify-content-between justify-content-sm-start company__list">
                             <li><a href="#" class="company__link">Оплата картой</a></li>
                             <li><a href="#" class="company__link">Выезд мастера</a></li>
                             <li><a href="#" class="company__link">Срочный ремонт</a></li>
@@ -301,7 +298,7 @@
                         </ul>
                         <div class="company__places">
                             <div class="row d-flex justify-content-between">
-                                <div class="col-4">
+                                <div class="col-12 col-md-4">
                                     <ul class="company__master-list">
                                         <li>Выезд мастера в день обращения</li>
                                         <li>Гарантия работы 1 год</li>
@@ -309,10 +306,10 @@
                                         <li>90% ремонтов менее чем за сутки</li>
                                     </ul>
                                 </div>
-                                <div class="col-7">
-                                    <div class="company__metro-wrapper d-flex">
-                                        <img src="../img/icons/company/map.svg" alt="map">
-                                        <div class="company__metro d-flex flex-column">
+                                <div class="col-12 col-md-7">
+                                    <div class="company__metro-wrapper d-flex flex-column align-items-center align-content-sm-start flex-sm-row">
+                                        <img class="mt-4 mt-sm-0 order-2" src="../img/icons/company/map.svg" alt="map">
+                                        <div class="company__metro d-flex flex-column mt-4 mt-sm-0">
                                             <span class="company__nearby">11 мастерских рядом с вами</span>
                                             <span class="company__mark">м. Елизаровская, пр. Елизарова, д.36</span>
                                             <span class="company__time">сегодня работает с 9:00 до 19:00</span>
@@ -346,17 +343,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="company__pages">
-                        <a href="#" class="company__page-link company__page-link_active">1</a>
-                        <a href="#" class="company__page-link">2</a>
-                        <a href="#" class="company__page-link">3</a>
-                        <a href="#" class="company__page-link">4</a>
-                        <a href="#" class="company__page-link">5</a>
-                        <a href="#" class="company__page-link">6</a>
-                    </div>
                 </div>
-                <div class="col-3">
-                    <aside class="category__aside">
+                <div class="col-12 d-flex flex-column order-0 col-md-4 order-md-1">
+                    <aside class="category__aside mt-md-0">
                         <form action="#" class="form-repair">
                             <label>Что нужно починить?</label>
                             <input class="mb-3" aria-label="" placeholder="утюг/кофемашину/плиту" type="text">
@@ -374,8 +363,8 @@
                             <img src="../img/icons/category/mark.svg" alt="mark">
                             <a href="#" class="link">Посмотреть на карте</a>
                         </div>
-                        <div class="category__metro d-flex flex-column align-items-center">
-                            <h2 class="title">На станциях метро</h2>
+                        <div class="category__metro d-flex flex-column align-items-start align-items-sm-center mb-3 mb-md-0">
+                            <span class="title">На станциях метро</span>
                             <ul class="category__list">
                                 <li><a href="#" class="link">Петроградская</a></li>
                                 <li><a href="#" class="link">Озерки</a></li>
@@ -394,24 +383,24 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <div class="row">
-                <div class="col-3">
-                    <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
-                </div>
-                <div class="col-9">
-                    <ul class="footer__list d-flex flex-wrap justify-content-between">
-                        <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
-                        <li><a href="#" class="footer__link">Цифровая техника</a></li>
-                        <li><a href="#" class="footer__link">Apple</a></li>
-                        <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
-                        <li><a href="#" class="footer__link">Бытовая техника</a></li>
-                        <li><a href="#" class="footer__link">Электроинструмент</a></li>
-                        <li><a href="#" class="footer__link">Добавить организацию</a></li>
-                        <li><a href="#" class="footer__link">Кухонная техника</a></li>
-                        <li><a href="#" class="footer__link">Полный каталог</a></li>
-                    </ul>
-                </div>
+            <div class="footer__list">
+                <a href="#" class="footer__logo"><img src="../img/logo/footer-logo.svg" alt="footer-logo"></a>
             </div>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Сервис-центры по производителю</a></li>
+                <li><a href="#" class="footer__link">Сервис-центры по виду техники</a></li>
+                <li><a href="#" class="footer__link">Добавить организацию</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Цифровая техника</a></li>
+                <li><a href="#" class="footer__link">Бытовая техника</a></li>
+                <li><a href="#" class="footer__link">Кухонная техника</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a href="#" class="footer__link">Apple</a></li>
+                <li><a href="#" class="footer__link">Электроинструмент</a></li>
+                <li><a href="#" class="footer__link">Полный каталог</a></li>
+            </ul>
         </div>
     </div>
 </footer>
