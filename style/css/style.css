@@ -223,7 +223,6 @@ ul {
   font-size: 14px;
   line-height: 19.6px;
   transition: 0.3s;
-  font-family: Raleway, sans-serif;
 }
 .link_small {
   font-size: 12px;
@@ -249,12 +248,17 @@ ul {
   transition: 0.3s;
 }
 
-@media (max-width: 991.8px) {
-  .link {
-    font-size: 10px;
+@media (max-width: 1200px) {
+  .link_mr {
+    font-size: 12px;
   }
   .link_mr:not(:last-of-type) {
     margin-right: 4px;
+  }
+}
+@media (max-width: 991.8px) {
+  .link_small {
+    font-size: 10px;
   }
   .link:hover {
     color: #3E57EC;
@@ -451,10 +455,6 @@ ul {
 .title__firm {
   color: #c4c4c4;
 }
-.title_large {
-  font-size: 36px;
-  font-weight: 600;
-}
 .title_big {
   font-size: 31px;
   font-weight: 600;
@@ -474,6 +474,10 @@ ul {
 .title_bold {
   font-weight: 500;
 }
+.title_large {
+  font-size: 36px;
+  font-weight: 600;
+}
 .title_mini {
   color: #0C25F6;
   font-size: 14px;
@@ -491,15 +495,6 @@ ul {
   margin-left: 15px;
 }
 
-@media (max-width: 1080px) {
-  .title {
-    font-size: 18px;
-  }
-  .title_search {
-    font-size: 36px;
-    line-height: 42px;
-  }
-}
 @media (max-width: 1200px) {
   .title {
     font-size: 18px;
@@ -508,13 +503,13 @@ ul {
     font-size: 36px;
     line-height: 42px;
   }
+  .title_large {
+    font-size: 24px;
+  }
 }
 @media (max-width: 767.8px) {
   .title_lf {
     font-size: 18px;
-  }
-  .title_left {
-    font-size: 12px;
   }
 }
 @media (max-width: 575.8px) {
@@ -1062,7 +1057,6 @@ ul {
   }
   .nav-menu__link {
     padding: 6px 0;
-    font-size: 10px;
   }
   .nav-menu__link:hover {
     color: #52515C;
@@ -1098,8 +1092,27 @@ ul {
   padding: 89px 0 50px 0;
 }
 
+@media (max-width: 1200px) {
+  .technical-xl {
+    padding: 25px 0;
+  }
+}
+@media (max-width: 765.8px) {
+  .technical-xl__wrapper img {
+    max-width: 150px;
+  }
+  .technical-xl__wrapper .title {
+    font-size: 14px;
+  }
+  .technical-xl__list li .link {
+    font-size: 12px;
+  }
+  .technical-xl__list {
+    margin-top: 15px;
+  }
+}
 .repair-places {
-  padding: 49px 0 47px 0;
+  padding: 33px 0 47px 0;
 }
 .repair-places__wrapper {
   margin-top: 45px;
@@ -1142,16 +1155,22 @@ ul {
 }
 
 @media (max-width: 991.8px) {
+  .repair-places {
+    padding-bottom: 0;
+  }
+  .repair-places .title {
+    font-size: 21px;
+  }
   .repair-places__about img {
     margin-right: 2px;
   }
 }
-@media (max-width: 567.8px) {
+@media (max-width: 575.8px) {
   .repair-places {
     padding: 0;
   }
   .repair-places__logo {
-    width: 40%;
+    width: 30%;
   }
 }
 .category {
@@ -1254,6 +1273,28 @@ ul {
 }
 
 @media (max-width: 991.8px) {
+  .category .category-buttons_mt {
+    margin-top: 100px;
+  }
+  .category__info {
+    margin-top: 0;
+  }
+  .category__map {
+    margin-top: 30px;
+    height: 165px;
+  }
+  .category__map img[alt=mark] {
+    margin-bottom: 24px;
+  }
+  .category__metro {
+    margin-top: 24px;
+  }
+  .category__list {
+    margin-top: 13px;
+  }
+  .category__item h2 {
+    font-size: 11px;
+  }
   .category__link {
     font-size: 12px;
   }
@@ -1312,16 +1353,16 @@ ul {
 .company {
   padding-bottom: 120px;
 }
-.company__wrapper {
+.company__wr {
   padding: 22px 25px 33px 15px;
   background: #F9FBFD;
   border-top: 5px solid #c5a7e5;
   border-radius: 3px;
 }
-.company__wrapper_bg-w {
+.company__wr_bg-w {
   background: #fff;
 }
-.company__wrapper_mb {
+.company__wr_mb {
   margin-bottom: 69px;
 }
 .company__contact {
@@ -1440,6 +1481,9 @@ ul {
   display: flex;
   margin-top: 90px;
 }
+.company__pages li:not(:last-of-type) {
+  margin-right: 14px;
+}
 .company__page-link {
   display: flex;
   justify-content: center;
@@ -1449,19 +1493,16 @@ ul {
   background: #F9FBFD;
   color: #C4C1C8;
   font-size: 12px;
-  transition: 0.3s;
+  transition: all 0.2s;
 }
 .company__page-link:hover {
   background: #3E57EC;
-  transition: 0.3s;
+  transition: all 0.2s;
   color: #fff;
 }
 .company__page-link_active {
   background: #3E57EC;
   color: #fff;
-}
-.company__page-link:not(:last-of-type) {
-  margin-right: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -1479,18 +1520,16 @@ ul {
     transition: 0.3s;
     color: #fff;
   }
-}
-@media (max-width: 767.8px) {
-  .company__master-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .company__master-list li {
     font-size: 10px;
-    flex: 0 0 50%;
   }
   .company__mark {
     font-size: 10px;
+  }
+}
+@media (max-width: 767.8px) {
+  .company__list_mb {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 575.8px) {
@@ -1514,7 +1553,12 @@ ul {
 .phone_border {
   border: 2px solid #E855D4;
   border-radius: 20px;
-  padding: 6px 37px 7px 37px;
+  width: 180px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 .phone_ml {
   margin-left: 39px;
@@ -1538,14 +1582,15 @@ ul {
   margin-bottom: 37px;
 }
 .about-company__name-wr {
-  max-width: 436px;
+  max-width: 693px;
   width: 100%;
 }
 .about-company__img {
   width: 150px;
+  margin-right: 30px;
 }
 .about-company__title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
 }
 .about-company__name {
@@ -1578,7 +1623,7 @@ ul {
 }
 .about-company__master-wr {
   background: #F9FBFD;
-  padding: 25px 0 26px 15px;
+  padding: 25px 15px;
   margin: 18px 0 63px 0;
 }
 .about-company__founded li {
@@ -1718,6 +1763,9 @@ ul {
   margin-top: 70px;
   margin-bottom: 140px;
 }
+.about-company .about-company-feedback__you-p {
+  margin-right: 5px;
+}
 .about-company .about-company-feedback__form {
   margin-top: 20px;
   border-radius: 5px;
@@ -1830,23 +1878,102 @@ ul {
   margin-right: 17px;
 }
 
+@media (max-width: 1200px) {
+  .about-company .title {
+    font-size: 24px;
+  }
+  .about-company__master-wr {
+    margin-bottom: 50px;
+  }
+  .about-company .about-company-accordion {
+    margin-top: 70px;
+  }
+  .about-company__reviews {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 991.8px) {
+  .about-company {
+    padding-bottom: 110px;
+  }
+  .about-company__nav {
+    margin-top: 24px;
+  }
+  .about-company .about-company-accordion {
+    margin-top: 50px;
+  }
+  .about-company__name-wr {
+    max-width: 100%;
+  }
   .about-company .about-company-feedback__you-p {
     margin-right: 10px;
   }
   .about-company .about-company-feedback__form input {
-    max-width: 150px;
+    max-width: 200px;
   }
   .about-company__link:hover {
     color: #3E57EC;
+  }
+  .about-company__reviews-wr {
+    margin-top: 50px;
+  }
+  .about-company .about-company-feedback {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+  .about-company__photos {
+    margin-top: 50px;
+  }
+  .about-company .about-company-faq {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767.8px) {
+  .about-company {
+    padding-bottom: 100px;
+  }
+  .about-company__nav {
+    margin-top: 14px;
+  }
+  .about-company .about-company-feedback__rate {
+    max-width: 200px;
+  }
+  .about-company .about-company-feedback__form input {
+    max-width: 100%;
+  }
+  .about-company .phone {
+    margin-left: auto;
+  }
+  .about-company__name-wr {
+    max-width: 320px;
+  }
+  .about-company__name {
+    font-size: 24px;
   }
 }
 @media (max-width: 575.8px) {
   .about-company {
     padding-bottom: 45px;
   }
-  .about-company__name {
-    font-size: 24px;
+  .about-company__reviews-wr {
+    margin-top: 50px;
+  }
+  .about-company .about-company-feedback {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+  .about-company__photos {
+    margin-top: 40px;
+  }
+  .about-company .about-company-social {
+    margin-top: 40px;
+  }
+  .about-company .about-company-faq {
+    margin-top: 45px;
+  }
+  .about-company__img {
+    width: 90px;
+    height: 94px;
   }
   .about-company .about-company-feedback__you-p {
     margin-right: 0;
@@ -1932,6 +2059,22 @@ ul {
   margin-bottom: 11px;
 }
 
+@media (max-width: 1200px) {
+  .service-center {
+    padding-top: 58px;
+  }
+  .service-center__line {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 575.8px) {
+  .service-center {
+    padding-top: 40px;
+  }
+  .service-center__line {
+    margin-top: 40px;
+  }
+}
 .service-brands {
   padding: 67px 0 100px 0;
 }
@@ -1972,6 +2115,11 @@ ul {
 @media (max-width: 1200px) {
   .service-brands__link {
     margin-top: 14px;
+  }
+}
+@media (max-width: 991.8px) {
+  .service-brands {
+    padding-top: 55px;
   }
 }
 .modal-brands__header {
