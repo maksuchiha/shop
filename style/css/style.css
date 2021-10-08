@@ -390,6 +390,9 @@ ul {
     height: 29px;
     margin: 0 auto;
   }
+  .button_reg {
+    margin-top: 41px;
+  }
 }
 .city-service {
   padding: 42px 0;
@@ -1512,8 +1515,17 @@ ul {
   }
 }
 @media (max-width: 991.8px) {
+  .company {
+    padding-bottom: 75px;
+  }
   .company__link:hover {
     background: #c5a7e5;
+  }
+  .company__metro-wrapper {
+    margin-top: 15px;
+  }
+  .company__pages {
+    margin-top: 45px;
   }
   .company__page-link:hover {
     background: #F9FBFD;
@@ -1528,6 +1540,12 @@ ul {
   }
 }
 @media (max-width: 767.8px) {
+  .company {
+    padding-bottom: 54px;
+  }
+  .company__pages {
+    margin-top: 40px;
+  }
   .company__list_mb {
     margin-bottom: 50px;
   }
@@ -1645,7 +1663,7 @@ ul {
   display: flex;
 }
 .about-company__metro span:not(:last-of-type) {
-  margin-right: 27px;
+  margin-right: 10px;
 }
 .about-company__metro span:before {
   content: "";
@@ -1911,6 +1929,10 @@ ul {
   .about-company .about-company-feedback__form input {
     max-width: 200px;
   }
+  .about-company__img {
+    width: 117px;
+    height: 122px;
+  }
   .about-company__link:hover {
     color: #3E57EC;
   }
@@ -1941,6 +1963,10 @@ ul {
   .about-company .about-company-feedback__form input {
     max-width: 100%;
   }
+  .about-company__img {
+    width: 90px;
+    height: 94px;
+  }
   .about-company .phone {
     margin-left: auto;
   }
@@ -1970,10 +1996,6 @@ ul {
   }
   .about-company .about-company-faq {
     margin-top: 45px;
-  }
-  .about-company__img {
-    width: 90px;
-    height: 94px;
   }
   .about-company .about-company-feedback__you-p {
     margin-right: 0;
@@ -2031,6 +2053,11 @@ ul {
   height: 324px;
 }
 
+@media (max-width: 1200px) {
+  .register-service .title {
+    font-size: 24px;
+  }
+}
 @media (max-width: 991.8px) {
   .register-service__p-0 {
     padding-right: 0;
