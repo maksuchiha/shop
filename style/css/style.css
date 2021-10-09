@@ -221,7 +221,6 @@ ul {
 .link {
   color: #3E57EC;
   font-size: 14px;
-  line-height: 19.6px;
   transition: 0.3s;
 }
 .link_small {
@@ -258,7 +257,10 @@ ul {
 }
 @media (max-width: 991.8px) {
   .link_small {
-    font-size: 10px;
+    font-size: 11px;
+  }
+  .link_margin {
+    margin: 0 4px;
   }
   .link:hover {
     color: #3E57EC;
@@ -410,6 +412,11 @@ ul {
   margin-bottom: 22px;
 }
 
+@media (max-width: 575.8px) {
+  .city-service {
+    font-size: 14px;
+  }
+}
 .brands {
   padding: 95px 0;
 }
@@ -574,15 +581,27 @@ ul {
 .repair {
   padding: 70px 0 60px 0;
 }
+.repair__list li {
+  margin-bottom: 5px;
+}
 
 @media (max-width: 1200px) {
   .repair__item h2 {
     font-size: 14px;
   }
+  .repair__list li a {
+    font-size: 12px;
+  }
 }
 @media (max-width: 991.8px) {
   .repair {
     padding: 15px 0 30px 0;
+  }
+  .repair__list li {
+    margin-bottom: 0px;
+  }
+  .repair__list li a {
+    font-size: 10px;
   }
 }
 @media (max-width: 767.8px) {
@@ -1125,14 +1144,11 @@ ul {
   font-size: 12px;
 }
 .repair-places__ml {
-  margin-left: 10px;
+  margin-left: 4px;
 }
 .repair-places__result {
   color: #0F0E16;
   font-size: 12px;
-}
-.repair-places__result img {
-  margin-right: 4px;
 }
 .repair-places__also {
   color: #0F0E16;
@@ -1165,7 +1181,7 @@ ul {
     font-size: 21px;
   }
   .repair-places__about img {
-    margin-right: 2px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 575.8px) {
@@ -1380,6 +1396,11 @@ ul {
 .company__list li:not(:last-of-type) {
   margin-right: 10px;
 }
+.company__metro-map {
+  margin-left: auto;
+  margin-right: auto;
+  width: 148px;
+}
 .company__link {
   border-radius: 3px;
   display: block;
@@ -1560,6 +1581,9 @@ ul {
   .company__page-link:not(:last-of-type) {
     margin-right: 17px;
   }
+  .company__metro-map {
+    width: 198px;
+  }
 }
 .phone {
   color: #E855D4;
@@ -1734,13 +1758,15 @@ ul {
   padding-bottom: 2px;
   margin-bottom: 20px;
   display: block;
-  border-bottom: 2px solid #F9FBFD;
 }
 .about-company .about-company-accordion ul li:first-of-type {
   font-weight: 500;
   padding: 7px 0 10px 70px;
   background: #F9FBFD;
   margin-left: 0;
+}
+.about-company .about-company-accordion ul li:not(:last-of-type) {
+  border-bottom: 2px solid #F9FBFD;
 }
 .about-company__reviews {
   margin-top: 90px;
@@ -2133,6 +2159,9 @@ ul {
 .service-brands__item {
   height: 140px;
   background: #F9FBFD;
+}
+.service-brands__item a {
+  font-size: 18px;
 }
 .service-brands__item span {
   font-size: 12px;
