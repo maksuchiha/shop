@@ -988,6 +988,10 @@ ul {
   width: calc(100% - 2px);
   margin: 1px;
 }
+.nav-menu__click:hover {
+  transition: all 0.2s;
+  color: #c5a7e5;
+}
 .nav-menu__click.show {
   z-index: 3;
 }
@@ -1063,6 +1067,7 @@ ul {
   font-size: 10px;
   padding: 7px 0;
   display: block;
+  transition: all 0.2s;
 }
 .nav-menu__link:hover {
   transition: all 0.2s;
@@ -1070,6 +1075,14 @@ ul {
   background: #F9FBFD;
 }
 
+@media (max-width: 1200px) {
+  .nav-menu__click:hover {
+    color: #0C25F6;
+  }
+  .nav-menu__link:hover {
+    color: #52515C;
+  }
+}
 @media (max-width: 991.8px) {
   .nav-menu__click {
     font-size: 10px;
@@ -1098,6 +1111,22 @@ ul {
 @media (max-width: 767.8px) {
   .nav-menu {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    height: 100%;
+    z-index: 5;
+  }
+  .nav-menu__click {
+    justify-content: space-between;
+  }
+  .nav-menu__wr {
+    flex-direction: column;
+  }
+  .nav-menu_active {
+    display: block;
   }
 }
 .technical-xl {
@@ -1158,7 +1187,7 @@ ul {
 }
 .repair-places__result {
   color: #0F0E16;
-  font-size: 12px;
+  font-size: 11px;
 }
 .repair-places__also {
   color: #0F0E16;
@@ -1183,23 +1212,33 @@ ul {
   max-height: 278px;
 }
 
+@media (max-width: 1200px) {
+  .repair-places .title {
+    font-size: 21px;
+  }
+  .repair-places__result {
+    font-size: 10px;
+  }
+  .repair-places__about {
+    font-size: 11px;
+  }
+}
 @media (max-width: 991.8px) {
   .repair-places {
     padding-bottom: 0;
-  }
-  .repair-places .title {
-    font-size: 21px;
   }
   .repair-places__about img {
     margin-right: 5px;
   }
 }
+@media (max-width: 767.8px) {
+  .repair-places__logo {
+    width: 30%;
+  }
+}
 @media (max-width: 575.8px) {
   .repair-places {
     padding: 0;
-  }
-  .repair-places__logo {
-    width: 30%;
   }
 }
 .category {
@@ -1300,7 +1339,32 @@ ul {
 .category__list li {
   margin: 7px 0;
 }
+.category__tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.category__tags li:not(:last-of-type) {
+  margin-right: 18px;
+}
+.category__tag {
+  display: block;
+  color: #52515C;
+  padding: 17px 15px;
+  background: #F9FBFD;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.category__tag:hover {
+  transition: all 0.2s;
+  background: #d9d9de;
+}
 
+@media (max-width: 1200px) {
+  .category__tag:hover {
+    background: #F9FBFD;
+  }
+}
 @media (max-width: 991.8px) {
   .category .category-buttons_mt {
     margin-top: 100px;
@@ -1327,8 +1391,18 @@ ul {
   .category__link {
     font-size: 12px;
   }
+  .category__tags li:last-of-type {
+    margin-top: 11px;
+  }
 }
 @media (max-width: 767.8px) {
+  .category__tags {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .category__tags li:last-of-type {
+    margin-top: 0;
+  }
   .category__brands {
     margin-left: 15px;
   }
@@ -1501,7 +1575,7 @@ ul {
 .company__repair {
   display: flex;
   color: #52515C;
-  font-size: 12px;
+  font-size: 11px;
 }
 .company__repair div {
   border-bottom: 1px dashed #52515C;
@@ -1579,6 +1653,15 @@ ul {
   }
   .company__list_mb {
     margin-bottom: 50px;
+  }
+  .company__review p {
+    margin: 0 0 0 14px;
+  }
+  .company__rate {
+    margin-left: 100px;
+  }
+  .company__rate .stars {
+    margin: 0 13px;
   }
 }
 @media (max-width: 575.8px) {
@@ -1672,6 +1755,7 @@ ul {
 .about-company__link:hover {
   transition: all 0.3s;
   color: #c5a7e5;
+  background: #EFF0F0;
 }
 .about-company__master-wr {
   background: #F9FBFD;
@@ -1944,6 +2028,10 @@ ul {
   }
   .about-company__reviews {
     margin-top: 50px;
+  }
+  .about-company__link:hover {
+    color: #0C25F6;
+    background: #F9FBFD;
   }
 }
 @media (max-width: 991.8px) {
