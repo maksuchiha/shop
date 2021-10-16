@@ -1123,9 +1123,13 @@ ul {
   .nav-menu .logo {
     padding-left: 16px;
   }
+  .nav-menu .logo__tech {
+    margin-left: -9px;
+  }
   .nav-menu .container {
     margin-top: 21px;
     max-width: 100%;
+    overflow: hidden;
     padding: 0;
   }
   .nav-menu__click {
@@ -1136,9 +1140,19 @@ ul {
   .nav-menu__click.show {
     background: #fff;
   }
+  .nav-menu__click:after {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+    background-position: center;
+    background-size: 10px;
+  }
   .nav-menu__click.show:after {
     border: 1px solid #3E57EC;
-    background: url("../../img/icons/nav-menu/arrow_b.svg") center/contain no-repeat;
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+    background: url("../../img/icons/nav-menu/arrow_b.svg") center/10px no-repeat;
   }
   .nav-menu__click.show:before {
     display: none;
@@ -1147,6 +1161,7 @@ ul {
     padding: 20px 0 20px 17px;
     top: 0 !important;
     left: 0 !important;
+    margin-top: -1px !important;
     border: none;
   }
   .nav-menu__list.dropdown-menu {
@@ -1237,6 +1252,7 @@ ul {
   margin-top: 28px;
 }
 .repair-places__about {
+  margin-top: 171px;
   color: #0F0E16;
   font-size: 12px;
 }
@@ -1262,6 +1278,7 @@ ul {
     font-size: 10px;
   }
   .repair-places__about {
+    margin-top: 131px;
     font-size: 11px;
   }
 }
@@ -1269,18 +1286,27 @@ ul {
   .repair-places {
     padding-bottom: 0;
   }
+  .repair-places__about {
+    margin-top: 0;
+  }
   .repair-places__about img {
     margin-right: 5px;
   }
 }
 @media (max-width: 767.8px) {
+  .repair-places__about {
+    margin-top: 30px;
+  }
   .repair-places__logo {
-    width: 30%;
+    width: 145%;
   }
 }
 @media (max-width: 575.8px) {
   .repair-places {
     padding: 0;
+  }
+  .repair-places__logo {
+    width: 30%;
   }
 }
 .category {
@@ -1386,15 +1412,19 @@ ul {
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
+.category__tags li {
+  margin-top: 11px;
+}
 .category__tags li:not(:last-of-type) {
   margin-right: 18px;
 }
 .category__tag {
   display: block;
   color: #52515C;
-  padding: 17px 15px;
+  padding: 15px;
   background: #F9FBFD;
-  font-size: 14px;
+  font-size: 12px;
+  border-radius: 3px;
   transition: all 0.2s;
 }
 .category__tag:hover {
@@ -1433,17 +1463,11 @@ ul {
   .category__link {
     font-size: 12px;
   }
-  .category__tags li:last-of-type {
-    margin-top: 11px;
-  }
 }
 @media (max-width: 767.8px) {
   .category__tags {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 0;
-  }
-  .category__tags li:last-of-type {
-    margin-top: 0;
   }
   .category__brands {
     margin-left: 15px;
@@ -2124,6 +2148,7 @@ ul {
     margin-top: 14px;
   }
   .about-company .about-company-feedback__rate {
+    margin-left: 15px;
     max-width: 200px;
   }
   .about-company .about-company-feedback__form input {
@@ -2373,22 +2398,9 @@ ul {
     display: flex;
   }
   .hamburger_active {
-    right: -30%;
-  }
-}
-@media (max-width: 714.8px) {
-  .hamburger_active {
-    right: -25%;
-  }
-}
-@media (max-width: 661.8px) {
-  .hamburger_active {
-    right: -17%;
-  }
-}
-@media (max-width: 617.8px) {
-  .hamburger_active {
-    right: -10%;
+    position: fixed;
+    top: 14px;
+    right: 2px;
   }
 }
 @media (max-width: 575.8px) {
