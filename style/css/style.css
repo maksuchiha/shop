@@ -275,6 +275,11 @@ ul {
     color: #3E57EC;
   }
 }
+@media (max-width: 575.8px) {
+  .link_margin {
+    margin: 0 10px 6px 10px;
+  }
+}
 .technical {
   padding: 33px 0 89px 0;
 }
@@ -1305,6 +1310,12 @@ ul {
   .repair-places {
     padding: 0;
   }
+  .repair-places__wrapper {
+    margin-top: 22px;
+  }
+  .repair-places .title {
+    font-size: 18px;
+  }
   .repair-places__logo {
     width: 30%;
   }
@@ -1393,6 +1404,9 @@ ul {
 .category__map img[alt=mark] {
   margin-bottom: 44px;
 }
+.category__aside-wr {
+  margin-top: 30px;
+}
 .category__aside {
   margin-top: 65px;
 }
@@ -1465,18 +1479,21 @@ ul {
   }
 }
 @media (max-width: 767.8px) {
+  .category__aside-wr {
+    margin-top: 0;
+  }
+  .category__aside {
+    margin-top: 0;
+  }
   .category__tags {
     margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
   .category__brands {
     margin-left: 15px;
   }
 }
 @media (max-width: 575.8px) {
-  .category__metro {
-    margin-left: 60px;
-  }
   .category .category-buttons_mt {
     margin-top: 40px;
   }
