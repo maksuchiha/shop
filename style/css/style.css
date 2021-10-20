@@ -2420,10 +2420,5 @@ ul {
     right: 2px;
   }
 }
-@media (max-width: 575.8px) {
-  .hamburger_active {
-    right: 0;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
