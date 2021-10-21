@@ -508,7 +508,7 @@ ul {
   font-weight: 300;
 }
 .title_search {
-  font-size: 36px;
+  font-size: 31px;
   line-height: 42px;
 }
 .title_search span:first-child {
@@ -1257,7 +1257,7 @@ ul {
   margin-top: 28px;
 }
 .repair-places__about {
-  margin-top: 171px;
+  margin-top: 131px;
   color: #0F0E16;
   font-size: 12px;
 }
@@ -1283,7 +1283,6 @@ ul {
     font-size: 10px;
   }
   .repair-places__about {
-    margin-top: 131px;
     font-size: 11px;
   }
 }
